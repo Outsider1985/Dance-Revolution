@@ -1,0 +1,113 @@
+<!doctype html><!--tipo de documento-->
+<html lang="es"> <!--página en español -->
+    <head><!--de cara a google/buscadores. No aparecen en pantalla-->
+        <meta charset="utf-8"><!--codificación caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--escalable-->
+		<link rel="shortcut icon" href="../Ejercicio HTLM CSS/images/favicon.png">
+<!--imagen navegador-->
+		<title>DANCE REVOLUTION</title><!--para búsquedas en google, 70 caracteres-->
+		<meta name="description" content="descripción de la web, se recomienda 90 caracteres"><!--150 caracteres-->
+        <meta name="keywords" 	 content="palabras clave, separadas, por comas"><!--palabras claves para búsqueda google-->
+
+        <link href="style/normalize.css" rel="stylesheet"><!--apunta a los archivos de estilo de la página-->
+        <link href="style/main.css" rel="stylesheet"><!--apunta a los archivos de estilo de la página-->
+    </head>
+    <!---->
+    <body><!--todo lo que se tipee aquí aparecerá en la pantalla-->
+        <header><!--logo y título web-->
+            <div class="logo"><!--div: "caja" división de la web-->
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M13 11V7.5L15.2 5.29C16 4.5 16.15 3.24 15.59 2.26C15.14 1.47 14.32 1 13.45 1C13.24 1 13 1.03 12.81 1.09C11.73 1.38 11 2.38 11 3.5V6.74L7.86 9.91C6.2 11.6 5.7 14.13 6.61 16.34C7.38 18.24 9.06 19.55 11 19.89V20.5C11 20.76 10.77 21 10.5 21H9V23H10.5C11.85 23 13 21.89 13 20.5V20C15.03 20 17.16 18.08 17.16 15.25C17.16 12.95 15.24 11 13 11M13 3.5C13 3.27 13.11 3.09 13.32 3.03C13.54 2.97 13.77 3.06 13.88 3.26C14 3.46 13.96 3.71 13.8 3.87L13 4.73V3.5M11 11.5C10.03 12.14 9.3 13.24 9.04 14.26L11 14.78V17.83C9.87 17.53 8.9 16.71 8.43 15.57C7.84 14.11 8.16 12.45 9.26 11.33L11 9.5V11.5M13 18V12.94C14.17 12.94 15.18 14.04 15.18 15.25C15.18 17 13.91 18 13 18Z" />
+                </svg>
+            </div>
+
+            <div class="title"><!--clase: da nombre a la caja para identificarla, y para dar estilo a un grupo de elementos-->
+                <h1>DANCE REVOLUTION</h1><!--encabezado, orgánico para google-->
+            </div>
+            <div class="menu">
+                <a href="" alt=""><p>Inicio</p></a>
+                <a href="" alt=""><p>Reserva</p></a>
+                <a href="" alt=""><p>Servicios</p></a>
+                <a href="" alt=""><p>Contacto</p></a>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="crud__form"><!--formulario: con nombre de dato y campo para introducirlo-->
+                <form class="crud__admin-form" id="crud__user-form" action="/users/create" autocomplete="off"> 
+                    <div class="crud__form-element">
+                        <div class="crud__form-label">
+                            <label for="name">Inscríbete!</label>
+                        </div>
+
+                        <div class="crud__form-input">
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+
+                    <div class="crud__form-element">
+                        <button class="crud__store-button">Enviar</button><!--botón para enlazar a la BD-->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <main><!--cuerpo de la página-->
+            <div class="crud"><!--create, read, delete, update. En conexión con base de datos-->
+                <div class="crud__table"><!--imagen: para vincular la foto y añadir texto en caso alternativo y para google-->
+                    <h2>ESTILOS POPULARES</h2>
+                    <table class="crud__table-grid-element">
+                        <tr>
+                            <td><img src="../Ejercicio HTLM CSS/images/salsa.png" alt="salsa"></td>
+                            <td><img src="../Ejercicio HTLM CSS/images/bachata.jpg" alt="bachata"></td>
+                            <td><img src="../Ejercicio HTLM CSS/images/kizomba.jpg" alt="kizomba"></td>
+                            <td><img src="../Ejercicio HTLM CSS/images/tango.jpg" alt="tango"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>SALSA</h3></td>
+                            <td><h3>BACHATA</h3></td>
+                            <td><h3>KIZOMBA</h3></td>
+                            <td><h3>TANGO</h3></td>
+                        </tr>
+                        <tr>
+                            <td><p>La salsa es un género musical bailable resultante de la síntesis del son cubano y otros géneros de música caribeña y estadounidenses como el jazz y el blues.</p></td>
+                            <td><p>La bachata es un género musical bailable originario de la República Dominicana, dentro de lo que se denomina folclore urbano. Está considerado como un derivado del bolero rítmico, con influencias de otros estilos como el son cubano y el merengue.</p></td>
+                            <td><p>La kizomba es un género musical que tuvo su origen en Angola, excolonia portuguesa. A mediados de los años 70 - y con la presencia de militares cubanos en Angola, que llevaron el dulce zouk</p></td>
+                            <td><p>El tango es un género musical y una danza, característica de la región del Río de la Plata y su zona de influencia, pero principalmente de las ciudades de Buenos Aires (en Argentina) y Montevideo (en Uruguay).</p></td>
+                        </tr>
+                    </table>
+                </div> 
+            </div> 
+            <div class="noticia">
+                <div class="noticia_info">
+                    <p>Las definiciones que constituyen a la danza dependen de factores sociales, culturales, estéticos, artísticos y morales; así como también del rango de movimiento funcional hasta las técnicas virtuosas. Cada danza, independientemente del estilo, tiene algo en común: implica tener flexibilidad y movimiento del cuerpo, así como buena condición física. Existieron muchos tipos de bailes y géneros de danza, generalmente se clasifica a estos en tres grandes grupos:</p>
+                    <p>- Las danzas populares o folclóricas. Son las que se basan en la transmisión de la cultura tradicional.</p>
+                    <p>- Las danzas clásicas. Son producto heredado de tiempos antiguos, principalmente en el periodo clásico de la antigüedad medieval, pero que ha sufrido cambios a través del tiempo hasta llegar a nuestros días, como el ballet.</p>
+                    <p>- Las danzas modernas. Son practicadas generalmente por jóvenes y conllevan todo un tipo de identidad social a través de la forma de entender la vida e incluso de vestir: como el Funky, break dance, el rock and roll.</p>
+                </div>
+                <div class="noticia_3d">
+                    <img src="../Ejercicio HTLM CSS/images/anatomia3d.png" alt="anatomia3d">
+                </div>
+            </div>
+        </main>
+
+        <footer><!--final de página-->
+            <div class="footer-element copyright">
+                <p>@2022</p><!--párrafos, texto-->
+            </div>
+            <div class="footer-element author">
+                <a href=""><p>Ulises</p></a><!--enlace web con su texto hipervinculado-->
+            </div>
+        </footer>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><!--apuntamos a librería-->
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Ubuntu:700,700i', 'Ubuntu+Condensed:400']
+                }
+            });        
+        </script><!--cargamos fuente tipográfica de Ubuntu-->
+
+    </body>
+</html>

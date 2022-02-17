@@ -1,0 +1,455 @@
+/*====================
+=======Structure======
+======================*/
+
+/* "." apunta a los elementos de la misma clase para darle estilo. "#" apunta al id. "<etiqueta>" apunta a esa etiqueta. "{" dentro las propiedades css que deseo aplicar. */
+body{ 
+    background-color: hsl(0, 0%, 100%); /* da color al fondo de la caja. hsl y sus inputs apuntan a un color. Tb pueden ser expresados en nombre, hexadecimal o rgb */
+    display:flex; /*  */
+    flex-direction:column;    
+    margin: 1em auto;
+    min-height: 100vh;
+    width: 90%;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    justify-content:space-between;
+}
+
+main{
+    margin: 1em 0;
+    width: 100%;
+}
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Ubuntu";
+}
+
+h5, h6 {
+    font-family: "Ubuntu Condensed";
+}
+
+a, td, p, button{
+    font-family: "Ubuntu";
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+/*====================
+========Logo=========
+======================*/
+
+.logo{
+    width: max-content;
+}
+
+.logo svg{
+    height: 4em;
+    width: 4em;
+}
+
+.logo svg path{
+    fill:hsl(0, 100%, 50%);
+}
+
+/*====================
+========Title=========
+======================*/
+
+.title h1{
+    text-align: center;
+    te
+}
+
+/*====================
+========Menu=========
+======================*/
+
+.menu{
+    display: flex;
+    flex-basis: 20% 20% 20% 20%;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0 1em;
+}
+
+.menu a {
+    background-color: hsl(0, 100%, 50%);
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: auto 0;
+}
+
+/*====================
+========Slider======
+======================*/
+
+.slider{
+    background-image: url(../images/background_slider.jpg);
+    background-size: contain;
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+}
+
+/*====================
+=========CRUD=========
+======================*/
+
+.crud{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.crud__table, .crud__form{
+    margin: auto, 1em;
+}
+
+.crud__table h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.crud__table-grid-element{
+    width: 100%;
+}
+
+.crud__table-grid-element img {
+    align-content: center;
+    margin: 1em;
+}
+
+.crud__table-grid-element h3 {
+    text-align: center;
+    margin: 1em;
+}
+
+.crud__table-grid-element p {
+    text-align: left;
+    margin: 1em;
+}
+
+.crud__form{
+    width: 100%;
+}
+
+.crud__form-element{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.crud__form-label{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.crud__form-label label{
+    color: hsl(0, 100%, 50%);
+	font-family: "Ubuntu";
+	font-weight: 600;
+	font-size: 1.5em;
+	transition: color 0.5s;
+}
+
+.crud__form-label--active label{
+	color: hsl(19, 100%, 50%);
+}
+
+.crud__form-input{
+    width: 100%;
+}
+
+.crud__form-input input, 
+.crud__form-input textarea,
+.crud__form-input select {
+    background-color: hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 0%, 0%);
+	box-sizing: border-box;
+    color: hsl(0, 100%, 50%);
+	font-family: "Ubuntu";
+	font-weight: 600;
+	padding: 0.2em 0.5em;
+	width: 100%;
+}
+
+.crud__form-input input:focus, .crud__form-input textarea:focus{
+	outline: none;
+}
+
+.crud__form-input select, .crud__form-input select:focus, .crud__form-input select:active { 
+	outline: 0 !important; 
+}
+
+.crud__store-button{
+	background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
+    background-size: 200% auto;
+    border-radius: 1em;
+    border: none;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    font-size: 1.2em;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 0px;
+    margin-top: 1em;
+	min-width: 20%;
+	padding: 1em 2em;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.crud__store-button:hover{
+    background-size: 100% auto;
+}
+
+.crud__store-button:focus {
+	outline: 0;
+}
+
+/*====================
+=========NOTICIA======
+======================*/
+
+.noticia {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em, auto;
+}
+
+.noticia_info {
+    width: 45%;
+}
+
+.noticia-info p {
+    margin: 1em;
+}
+
+.noticia_3d {
+    width: 45%;
+}
+
+.copyright{
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.author{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media (min-width: 1920px) {
+
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    .logo svg{
+        height: 4em;
+        width: 4em;
+    }
+
+    .crud__form-label label{
+        font-size: 2em;
+    }
+
+    .crud__form-input input, 
+    .crud__form-input textarea,
+    .crud__form-input select {
+        font-size: 1.5em;
+        padding: 0.3em;
+    }
+
+    .crud__store-button{
+        font-size: 1.5em;
+    }
+
+    .copyright p{
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width:1024px) {
+
+    header{
+        height: max-content;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .logo svg{
+        height: 2em;
+        width: 2em;
+    }
+
+    .title{
+        margin-left: 0.5em;
+    }
+
+    .crud{
+        display: block;
+        margin: 1.5em 0;
+    }
+
+    .crud__table, .crud__form{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .crud__table-grid{
+        grid-gap: 0;
+    }
+
+    .crud__table-flex{
+        gap: 0;
+    }
+
+    .crud__store-button{
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+
+    .copyright{
+        margin: 1em 0;
+    }
+
+    .author{
+        padding: 1em;
+    }
+}
+
+@media (max-width:479px) {
+
+    header{
+        height: max-content;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+    
+    h2 {
+        font-size: 0.7em;
+    }
+
+    a {
+        font-size: 0.7em;
+    }
+
+    .logo{
+        height: max-content;
+    }
+
+    .logo svg{
+        height: 2em;
+        width: 2em;
+    }
+
+    .title{
+        height: max-content;
+        margin-left: 0.5em;
+    }
+
+    .crud{
+        display: block;
+        margin: 1.5em 0;
+    }
+
+    .crud__table, .crud__form{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .crud__table-grid{
+        grid-gap: 0;
+    }
+
+    .crud__table-flex{
+        gap: 0;
+    }
+
+    .crud__store-button{
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+
+    .copyright{
+        margin: 1em 0;
+    }
+
+    .author{
+        padding: 1em;
+    }
+}
+
+
+
+
