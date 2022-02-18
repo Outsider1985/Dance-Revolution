@@ -32,19 +32,8 @@ footer{
 ======Typography======
 ======================*/
 
-h1, h2, h3, h4, h5, h6, a, p{
+h1, h2, h3, a, p, button, li{
     color: hsl(0, 0%, 0%);
-}
-
-h1, h2, h3, h4 {
-    font-family: "Ubuntu";
-}
-
-h5, h6 {
-    font-family: "Ubuntu Condensed";
-}
-
-a, td, p, button{
     font-family: "Ubuntu";
 }
 
@@ -56,11 +45,6 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-h4 {
     font-weight: 600;
     text-decoration: none;
 }
@@ -81,18 +65,32 @@ a:focus, a:hover {
 }
 
 /*====================
-========Image=========
+=======Imágenes========
 ======================*/
 
-img {
+img{
     max-width: 100%;
+}
+
+/*====================
+========Title=========
+======================*/
+
+.title{
+    margin: auto 0;
 }
 
 /*====================
 ========Logo=========
 ======================*/
 
+.logo-title{
+    display: flex;
+    justify-content: start;
+}
+
 .logo{
+    margin-top: auto;
     width: max-content;
 }
 
@@ -103,15 +101,6 @@ img {
 
 .logo svg path{
     fill:hsl(0, 100%, 50%);
-}
-
-/*====================
-========Title=========
-======================*/
-
-.title h1{
-    text-align: center;
-    te
 }
 
 /*====================
@@ -126,80 +115,66 @@ img {
     margin: 0 1em;
 }
 
-.menu a {
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul li{
     background-color: hsl(0, 100%, 50%);
     border-style: none;
     border-radius: 1em;
-    padding: 0.5em;
-    margin: auto 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding: 0.5em 1em;
+    margin: auto 0.5em;
 }
+
+.menu ul li:hover{
+    background-color: hsl(0, 87%, 28%);
+    cursor: pointer;
+}
+
 
 /*====================
 ========Slider======
 ======================*/
 
 .slider{
-    background-image: url(../images/background_slider.jpg);
-    background-size: contain;
+    height: 75vh;
     margin: 1em 0;
-    padding: 1em;
+    position: relative;
     width: 100%;
 }
 
-/*====================
-=========CRUD=========
-======================*/
-
-.crud{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-    width: 100%;
+.slider-image, .slider-form{
+    position: absolute;
 }
 
-.crud__table, .crud__form{
-    margin: auto, 1em;
+.slider-image{
+    z-index: 1000;
 }
 
-.crud__table h2 {
-    text-align: center;
-    margin-bottom: 1em;
+.slider-form{
+    background-color: hsla(0, 0%, 0%, 0.692);
+    left: 10%;
+    padding: 3em;
+    top: 30%;
+    z-index: 1001;
 }
 
-.crud__table-grid-element{
-    width: 100%;
-}
-
-.crud__table-grid-element img {
-    align-content: center;
-    margin: 1em;
-}
-
-.crud__table-grid-element h3 {
-    text-align: center;
-    margin: 1em;
-}
-
-.crud__table-grid-element p {
-    text-align: left;
-    margin: 1em;
-}
-
-.crud__form{
-    width: 100%;
-}
-
-.crud__form-element{
+.slider-form-element{
     margin-bottom: 1em;
     width: 100%;
 }
 
-.crud__form-label{
+.slider-form-label{
     margin-bottom: 1em;
     width: 100%;
 }
 
-.crud__form-label label{
+.slider-form-label label{
     color: hsl(0, 100%, 50%);
 	font-family: "Ubuntu";
 	font-weight: 600;
@@ -207,17 +182,17 @@ img {
 	transition: color 0.5s;
 }
 
-.crud__form-label--active label{
+.slider-form-label--active label{
 	color: hsl(19, 100%, 50%);
 }
 
-.crud__form-input{
+.slider-form-input{
     width: 100%;
 }
 
-.crud__form-input input, 
-.crud__form-input textarea,
-.crud__form-input select {
+.slider-form-input input, 
+.slider-form-input textarea,
+.slider-form-input select {
     background-color: hsl(0, 0%, 100%);
 	border: 1px solid hsl(0, 0%, 0%);
 	box-sizing: border-box;
@@ -228,15 +203,15 @@ img {
 	width: 100%;
 }
 
-.crud__form-input input:focus, .crud__form-input textarea:focus{
+.slider-form-input input:focus, .slider-form-input textarea:focus{
 	outline: none;
 }
 
-.crud__form-input select, .crud__form-input select:focus, .crud__form-input select:active { 
+.slider-form-input select, .slider-form-input select:focus, .slider-form-input select:active { 
 	outline: 0 !important; 
 }
 
-.crud__store-button{
+.slider-form-button{
 	background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
     background-size: 200% auto;
     border-radius: 1em;
@@ -254,34 +229,110 @@ img {
 	text-decoration: none;
 }
 
-.crud__store-button:hover{
+.slider-form-button:hover{
     background-size: 100% auto;
 }
 
-.crud__store-button:focus {
+.slider-form-button:focus {
 	outline: 0;
+}
+
+/*====================
+======ESTILOS=========
+======================*/
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.services{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.services-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service-item {
+    border-style: solid;
+    border-color: hsl(0, 100%, 50%);
+    border-radius: 1em;
+    padding: 0.1em;
+    margin-bottom: 1.5em;
+    width: 23%;
+}
+
+.service-item-image {
+    margin: 1em 0;
+    height: 35vh;
+    width: 100%;
+}
+
+.service-item-image img{
+    display: block;
+    margin: auto;
+}
+
+.service-item-title {
+    text-align: left;
+    margin: 1em;
+}
+
+.service-item-description {
+    text-align: left;
+    margin: 1em;
 }
 
 /*====================
 =========NOTICIA======
 ======================*/
 
-.noticia {
+.new {
     display: flex;
     justify-content: space-between;
-    margin: 1em, auto;
+    margin: 1em, 0;
 }
 
-.noticia_info {
+.new-info {
     width: 45%;
 }
 
-.noticia-info p {
-    margin: 1em;
+.new-info p {
+    text-align: left;
+    margin: 2em 0;
+    width: 100%;
 }
 
-.noticia_3d {
+.new-3d {
     width: 45%;
+}
+
+.new-3d img {
+    align-content: center;
+    margin: 5em 0;
+    width: 100%;
+}
+
+/*====================
+========FOOTER========
+======================*/
+
+footer {
+    border-top: solid hsl(0, 100%, 50%);;
+    padding: 2em 0;
 }
 
 .copyright{
@@ -295,113 +346,28 @@ img {
     text-align: center;
 }
 
-@media (min-width: 1920px) {
-
-    h1 {
-        font-size: 3.5em;
-    }
-    
-    h2 {
-        font-size: 3em;
-    }
-
-    .logo svg{
-        height: 4em;
-        width: 4em;
-    }
-
-    .crud__form-label label{
-        font-size: 2em;
-    }
-
-    .crud__form-input input, 
-    .crud__form-input textarea,
-    .crud__form-input select {
-        font-size: 1.5em;
-        padding: 0.3em;
-    }
-
-    .crud__store-button{
-        font-size: 1.5em;
-    }
-
-    .copyright p{
-        font-size: 1.5em;
-    }
-}
-
-
-@media (max-width:1024px) {
-
-    header{
-        height: max-content;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .logo svg{
-        height: 2em;
-        width: 2em;
-    }
-
-    .title{
-        margin-left: 0.5em;
-    }
-
-    .crud{
-        display: block;
-        margin: 1.5em 0;
-    }
-
-    .crud__table, .crud__form{
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    .crud__table-grid{
-        grid-gap: 0;
-    }
-
-    .crud__table-flex{
-        gap: 0;
-    }
-
-    .crud__store-button{
-        font-size: 1em;
-        margin-top: 0.5em;
-    }
-
-    .copyright{
-        margin: 1em 0;
-    }
-
-    .author{
-        padding: 1em;
-    }
-}
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
 
 @media (max-width:479px) {
-
-    header{
-        height: max-content;
-    }
-
+    
     h1 {
-        font-size: 1em;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
     }
     
     h2 {
-        font-size: 0.7em;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
     }
 
-    a {
+    h3, a, p, button, li{
         font-size: 0.7em;
+        font-weight: 600;
+        text-decoration: none;
     }
 
     .logo{
@@ -409,36 +375,83 @@ img {
     }
 
     .logo svg{
-        height: 2em;
-        width: 2em;
+        height: 3em;
+        width: 3em;
     }
 
-    .title{
-        height: max-content;
-        margin-left: 0.5em;
+    header {
+        display: flex;
+        flex-direction: column;
     }
 
-    .crud{
-        display: block;
-        margin: 1.5em 0;
+    .menu{
+        display: flex;
     }
 
-    .crud__table, .crud__form{
-        min-width: 100%;
-        max-width: 100%;
+    .slider{
+        height: 25vh;
+        margin: 1em 0;
+        position: relative;
+        width: 100%;
+    }
+    
+    .slider-image, .slider-form{
+        position: absolute;
+    }
+    
+    .slider-image{
+        z-index: 1000;
+    }
+    
+    .slider-form{
+        font-size: 0.8em;
+        background-color: hsla(0, 0%, 0%, 0.692);
+        left: 10%;
+        padding: 1em;
+        top: 10%;
+        z-index: 1001;
     }
 
-    .crud__table-grid{
-        grid-gap: 0;
+    .services{
+        width: 100%;
     }
 
-    .crud__table-flex{
-        gap: 0;
+    .services-items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .crud__store-button{
-        font-size: 1em;
-        margin-top: 0.5em;
+    .service-item {
+        width: 100%;
+    }
+
+    .new {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .new-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .new-info p {
+        text-align: left;
+        margin: 0.5em 0;
+        width: 100%;
+    }
+    
+    .new-3d {
+        width: 100%;
+    }
+    
+    .new-3d img {
+        align-content: center;
+        margin: 1em 0;
+        width: 100%;
     }
 
     .copyright{
