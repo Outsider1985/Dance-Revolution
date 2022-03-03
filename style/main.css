@@ -131,6 +131,10 @@ img{
     margin: auto 0.5em;
 }
 
+.menu a{
+    color: hsl(0, 0%, 100%);
+}
+
 .menu ul li:hover{
     background-color: hsl(0, 87%, 28%);
     cursor: pointer;
@@ -342,7 +346,7 @@ footer {
 }
 
 .author{
-    margin-bottom: 1em;
+    margin: 0;
     text-align: center;
 }
 
@@ -462,7 +466,3 @@ footer {
         padding: 1em;
     }
 }
-
-
-
-
