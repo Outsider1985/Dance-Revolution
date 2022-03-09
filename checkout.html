@@ -32,8 +32,8 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li>Reserva</li>
-                    <li><a hfer="services.html">Servicios</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                    <li><a href="courses.html">Cursos</a></li>
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </div>
@@ -63,12 +63,12 @@
                             <input type="number" name="name" placeholder="Escribe tu teléfono">
                         </div>
                         <div class="form-item">
-                            <input type="number" name="name" placeholder="Escribe número de tarjeta débito/crédito/cta bancaria">
+                            <input type="text" name="name" placeholder="Escribe número de tarjeta débito/crédito/cta bancaria" required>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" name="debit"><p class="title">Débito</p>
-                            <input type="checkbox" name="credit"><p class="title">Crédito</p>
-                            <input type="checkbox" name="bank"><p class="title">Cta.Bancaria</p>
+                        <div class="form-pay">
+                            <input type="radio" name="debit"><p class="title">Débito</p>
+                            <input type="radio" name="credit"><p class="title">Crédito</p>
+                            <input type="radio" name="bank"><p class="title">Cta.Bancaria</p>
                         </div>
                     </div>
                 </form>
@@ -103,36 +103,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="order">
-                    <table class="order-table">
-                        <tr>
-                            <th>CLASE</th>
-                            <th>SUBTOTAL</th>
-                        </tr>
-                        <tr>
-                            <td>SALSA INICIO x4 (MES)</td>
-                            <td>€36.00</td>
-                        </tr>
-                        <tr>
-                            <td>IVA (21%)</td>
-                            <td>€7.56</td>
-                        </tr>
-                        <tr>
-                            <td>TOTAL</td>
-                            <td>€43.56</td>
-                        </tr>
-                    </table>
+                <div class="total">
                     <div class="reservation">
-                        <p>Plazas:</p>
+                        <p>TOTAL RESERVA:</p>
                         <div class="reservation-button">
-                            <button>+</button>
-                            <input id="quantity" type="number" value="1" readonly="readonly">
-                            <button>-</button>    
+                            <input id="quantity" type="text" value="€43.56" readonly="readonly">
                         </div>
                     </div>
-                </div>
-                <div class="total">
-                    <p>TOTAL RESERVA: €87.12</p>
                 </div>
                 <button class="item-button"><a href="checkout.html">PAGAR</a></button>
             </div>
