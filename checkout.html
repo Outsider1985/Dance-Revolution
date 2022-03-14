@@ -32,9 +32,9 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cart.html">Carrito</a></li>
-                    <li><a href="courses.html">Cursos</a></li>
                     <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="products.html">Cursos</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
                 </ul>
             </div>
         </header>
@@ -66,9 +66,9 @@
                             <input type="text" name="name" placeholder="Escribe número de tarjeta débito/crédito/cta bancaria" required>
                         </div>
                         <div class="form-pay">
-                            <input type="radio" name="debit"><p class="title">Débito</p>
-                            <input type="radio" name="credit"><p class="title">Crédito</p>
-                            <input type="radio" name="bank"><p class="title">Cta.Bancaria</p>
+                            <input type="radio" name="radAnswer"><p class="title">Débito</p>
+                            <input type="radio" name="radAnswer"><p class="title">Crédito</p>
+                            <input type="radio" name="radAnswer"><p class="title">Cta.Bancaria</p>
                         </div>
                     </div>
                 </form>
@@ -104,14 +104,12 @@
                     </div>
                 </div>
                 <div class="total">
-                    <div class="reservation">
-                        <p>TOTAL RESERVA:</p>
-                        <div class="reservation-button">
-                            <input id="quantity" type="text" value="€43.56" readonly="readonly">
-                        </div>
+                    <p>TOTAL RESERVA:</p>
+                    <div class="pay-button">
+                        <input id="quantity" type="text" value="€43.56" readonly="readonly">
                     </div>
                 </div>
-                <button class="item-button"><a href="checkout.html">PAGAR</a></button>
+                <button class="item-button"><a href="">PAGAR</a></button>
             </div>
         </main>
 

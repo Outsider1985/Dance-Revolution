@@ -2,29 +2,27 @@
 =======Structure======
 ======================*/
 
-/* "." apunta a los elementos de la misma clase para darle estilo. "#" apunta al id. "<etiqueta>" apunta a esa etiqueta. "{" dentro las propiedades css que deseo aplicar. */
 body{ 
-    background-color: hsl(0, 0%, 100%); /* da color al fondo de la caja. hsl y sus inputs apuntan a un color. Tb pueden ser expresados en nombre, hexadecimal o rgb */
-    display:flex; /*  */
+    background-color: hsl(0, 0%, 100%);
+    display:flex;
     flex-direction:column;    
-    margin: 1em auto;
+    margin: 0 auto;
     min-height: 100vh;
     width: 90%;
 }
 
 header{
-    display: flex;
-    height: 10vh;
-    justify-content:space-between;
+    margin: 0;
+    width: 100%;
 }
 
 main{
-    margin: 1em 0;
+    margin: 0;
     width: 100%;
 }
 
 footer{
-    margin-top: auto; 
+    margin: 0; 
     width: 100%;
 }
 
@@ -73,46 +71,55 @@ img{
 }
 
 /*====================
-========Title=========
+========HEADER========
 ======================*/
 
-.title{
-    margin: auto 0;
+.header-container{
+    display: flex;
+    height: 10vh;
+    justify-content:space-between;
+}
+
+.header-2-col{
+    display: flex;
+    justify-content: flex-start;
 }
 
 /*====================
-========Logo=========
+========LOGO==========
 ======================*/
 
-.logo-title{
+.title{
+    margin:0;
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo{
-    margin-top: auto;
-    width: max-content;
+    margin: 0.5em 0 0 0;
 }
 
 .logo svg{
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
 }
 
 .logo svg path{
     fill:hsl(0, 100%, 50%);
 }
 
+.hamburguer{
+    display:none;
+}
+
 /*====================
-========Menu=========
+========MENU==========
 ======================*/
 
 .menu{
     display: flex;
-    flex-basis: 20% 20% 20% 20%;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin: 0 1em;
+    margin: 0;
 }
 
 .menu ul{
@@ -125,7 +132,6 @@ img{
     background-color: hsl(0, 100%, 50%);
     border-style: none;
     border-radius: 1em;
-    color: hsl(0, 0%, 100%);
     font-weight: 600;
     padding: 0.5em 1em;
     margin: auto 0.5em;
@@ -140,14 +146,13 @@ img{
     cursor: pointer;
 }
 
-
 /*====================
-========Slider======
+========SLIDER========
 ======================*/
 
 .slider{
     height: 75vh;
-    margin: 1em 0;
+    margin-top: 0.5em;
     position: relative;
     width: 100%;
 }
@@ -215,12 +220,14 @@ img{
 	outline: 0 !important; 
 }
 
+/* BUTTON */
+
 .slider-form-button{
 	background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
     background-size: 200% auto;
     border-radius: 1em;
     border: none;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
     font-size: 1.2em;
 	font-weight: 600;
@@ -242,7 +249,7 @@ img{
 }
 
 /*====================
-======ESTILOS=========
+======MAIN STYLE======
 ======================*/
 
 h2 {
@@ -257,74 +264,73 @@ h3 {
     width: 100%;
 }
 
-.services{
-    margin-bottom: 1em;
+.index-courses{
+    margin:0;
     width: 100%;
 }
 
-.services-items{
+.desktop-col-4{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
 
-.service-item {
+.index-course{
     border-style: solid;
     border-color: hsl(0, 100%, 50%);
     border-radius: 1em;
     padding: 0.1em;
-    margin-bottom: 1.5em;
-    width: 23%;
+    margin-bottom: 1em;
+    width: 24%;
 }
 
-.service-item-image {
+.course-image {
     margin: 1em 0;
     height: 35vh;
     width: 100%;
 }
 
-.service-item-image img{
+.course-image img{
     display: block;
     margin: auto;
 }
 
-.service-item-title {
+.course-title {
     text-align: left;
     margin: 1em;
 }
 
-.service-item-description {
+.course-description {
     text-align: left;
     margin: 1em;
 }
 
 /*====================
-=========NOTICIA======
+======MAIN NEWS=======
 ======================*/
 
-.new {
+.index-news {
     display: flex;
     justify-content: space-between;
     margin: 1em, 0;
 }
 
-.new-info {
+.index-news-info {
     width: 45%;
 }
 
-.new-info p {
+.index-news-info p {
     text-align: left;
     margin: 2em 0;
     width: 100%;
 }
 
-.new-3d {
+.index-news-image {
     width: 45%;
 }
 
-.new-3d img {
+.index-news-image img {
     align-content: center;
     margin: 5em 0;
     width: 100%;
@@ -335,14 +341,13 @@ h3 {
 ======================*/
 
 footer {
-    border-top: solid hsl(0, 100%, 50%);;
-    padding: 2em 0;
+    border-top: solid hsl(0, 100%, 50%);
+    padding: 1em 0;
 }
 
 .copyright{
     margin-bottom: 1em;
     text-align: center;
-    width: 100%;
 }
 
 .author{
@@ -363,38 +368,47 @@ footer {
     }
     
     h2 {
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 600;
         text-decoration: none;
     }
 
     h3, a, p, button, li{
-        font-size: 0.7em;
+        font-size: 0.8em;
         font-weight: 600;
         text-decoration: none;
     }
 
-    .logo{
-        height: max-content;
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo svg{
+        margin: 0;
         height: 3em;
         width: 3em;
     }
 
-    header {
-        display: flex;
-        flex-direction: column;
+    .hamburguer, .hamburguer svg{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .hamburguer svg path{
+        fill:hsl(0, 100%, 50%);
     }
 
     .menu{
-        display: flex;
+        display: none;
     }
 
     .slider{
-        height: 25vh;
-        margin: 1em 0;
+        height: 30vh;
+        margin: 0;
         position: relative;
         width: 100%;
     }
@@ -416,53 +430,46 @@ footer {
         z-index: 1001;
     }
 
-    .services{
+    .index-courses{
         width: 100%;
     }
 
-    .services-items{
+    .mobile-col-4{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        }
+
+    .index-course {
         width: 100%;
     }
 
-    .service-item {
-        width: 100%;
-    }
-
-    .new {
+    .index-news {
         display: flex;
         flex-direction: column;
     }
     
-    .new-info {
+    .index-news-info {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
     }
     
-    .new-info p {
+    .index-news-info p {
         text-align: left;
         margin: 0.5em 0;
         width: 100%;
     }
     
-    .new-3d {
+    .index-news-image {
         width: 100%;
     }
     
-    .new-3d img {
+    .index-news-image img {
         align-content: center;
         margin: 1em 0;
         width: 100%;
-    }
-
-    .copyright{
-        margin: 1em 0;
-    }
-
-    .author{
-        padding: 1em;
     }
 }
