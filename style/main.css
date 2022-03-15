@@ -168,13 +168,13 @@ img{
 .slider-form{
     background-color: hsla(0, 0%, 0%, 0.692);
     left: 10%;
-    padding: 3em;
+    padding: 2em;
     top: 30%;
     z-index: 1001;
 }
 
 .slider-form-element{
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     width: 100%;
 }
 
@@ -233,8 +233,7 @@ img{
 	font-weight: 600;
 	letter-spacing: 0;
 	line-height: 0px;
-    margin-top: 1em;
-	min-width: 20%;
+	width: fit-content;
 	padding: 1em 2em;
 	transition: 0.5s;
 	text-decoration: none;

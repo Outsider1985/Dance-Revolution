@@ -3,34 +3,26 @@
 ======================*/
 
 body{ 
-    background-color: hsl(0, 0%, 100%); /* da color al fondo de la caja. hsl y sus inputs apuntan a un color. Tb pueden ser expresados en nombre, hexadecimal o rgb */
+    background-color: hsl(0, 0%, 100%);
     display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-    margin: 0 5%;
-    max-height: 100vh;
+    flex-direction:column;    
+    margin: 0 auto;
+    min-height: 100vh;
     width: 90%;
 }
 
 header{
     margin: 0;
-    display: flex;
-    height: 10vh;
-    justify-content:space-between;
+    width: 100%;
 }
 
 main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 0;
-    height: 80vh;
     width: 100%;
 }
 
 footer{
-    margin: 0;
-    height: 5vh; 
+    margin: 0; 
     width: 100%;
 }
 
@@ -55,11 +47,7 @@ h2 {
     text-decoration: none;
 }
 
-p{
-    font-size: 0.9em;
-}
-
-a{
+a {
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -o-transition: 300ms;
@@ -74,68 +62,47 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-#categories-selected{
-    color: hsl(0, 50%, 25%);
-}
-
 /*====================
-======Elements========
-======================*/
-
-h2 {
-    text-align: center;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-h3 {
-    text-align: center;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.item-button a{
-    color: white;
-}
-
-svg path{
-    fill: maroon;
-}
-
-/*====================
-=======Images=========
+=======Imágenes========
 ======================*/
 
 img{
     max-width: 100%;
-    border-radius: 1em;
 }
 
 /*====================
-========Title=========
+========HEADER========
+======================*/
+
+.header-container{
+    display: flex;
+    height: 10vh;
+    justify-content:space-between;
+}
+
+.header-2-col{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*====================
+========LOGO==========
 ======================*/
 
 .title{
-    margin: auto 0;
-}
-
-/*====================
-========Logo=========
-======================*/
-
-.logo-title{
+    margin:0;
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo{
-    margin-top: auto;
-    width: max-content;
+    margin: 0.5em 0 0 0;
 }
 
 .logo svg{
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
 }
 
 .logo svg path{
@@ -143,19 +110,16 @@ img{
 }
 
 .hamburguer{
-    display: none;
+    display:none;
 }
 
 /*====================
-========Menu=========
+========MENU==========
 ======================*/
 
 .menu{
     display: flex;
-    flex-basis: 20% 20% 20% 20%;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin: 0 1em;
+    margin: 0;
 }
 
 .menu ul{
@@ -168,7 +132,6 @@ img{
     background-color: hsl(0, 100%, 50%);
     border-style: none;
     border-radius: 1em;
-    color: hsl(0, 0%, 100%);
     font-weight: 600;
     padding: 0.5em 1em;
     margin: auto 0.5em;
@@ -184,10 +147,56 @@ img{
 }
 
 /*====================
-========MAIN==========
+======CART ELEMENTS===
 ======================*/
 
-.billing-container{
+button a{
+    color: hsl(0, 0%, 100%);
+}
+
+/*====================
+=========BUTTON=======
+======================*/
+
+.slider-form-button{
+	background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
+    background-size: 200% auto;
+    border-radius: 1em;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 1.2em;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 0px;
+	width: fit-content;
+	padding: 1em 2em;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.slider-form-button:hover{
+    background-size: 100% auto;
+}
+
+.slider-form-button:focus {
+	outline: 0;
+}
+
+/*====================
+===CHECKOUT MAIN======
+======================*/
+
+.desktop-2-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin: 0 0 1em 0;
+}
+
+.checkout-billing-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,59 +209,33 @@ img{
     border-radius: 1em;
 }
 
-.order-title{
+.checkout-billing-title{
     margin: 0;
     margin-bottom: 1em;
     width: 90%;
 }
 
-.form-container{
+.checkout-form-container{
     width: 90%;
 }
 
-.form-input{
+.checkout-form-input{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.form-item, .form-item input{
+.checkout-form-item, .checkout-form-item input{
     width: 100%;
 }
 
-.form-pay{
+.checkout-form-pay{
     display: flex;
     align-items: center;
     gap: 0.5em;
 }
 
-.item-button{
-    background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
-    background-size: 200% auto;
-    border-radius: 1em;
-    border: none;
-    color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    font-size: 1.0em;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 0px;
-    min-width: 20%;
-    padding: 0.9em 1em;
-    transition: 0.5s;
-    text-decoration: none;
-    margin: 0 1em;
-}
-
-.item-button:hover{
-    background-size: 100% auto;
-}
-
-.item-button:focus {
-    outline: 0;
-}
-
-.order-container{
+.checkout-order-container{
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -260,42 +243,40 @@ img{
     gap: 1em;
     height: 80vh;
     margin: 0;
-    padding: 0;
-    width: 49%;
+    padding: 0 1% 0 1%;
+    width: 47%;
     background-color: hsl(0, 0%, 80%);
     border-radius: 1em;
 }
 
-.order{
+.checkout-order{
     width: 90%;
     margin: 0;
 }
 
-.order-table{
+.checkout-order-table{
     width: 100%;
     text-align: left;
 }
 
-.reservation{
+.checkout-order-reservation{
     gap: 0.5em;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    justify-content: left;
     align-items: center;
-    margin: 0;
 }
 
-.pay-button{
+.reservation-button{
     display: flex;
     align-items: center;
 }
 
-#quantity{
-    width: 3em;
+#reservation-quantity{
+    width: 1.5em;
     text-align: center;
 }
 
-.total{
+.checkout-total{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -304,7 +285,9 @@ img{
     margin: 0 1em;
 }
 
-
+#total-quantity{
+    width: 3em;
+}
 
 /*====================
 ========FOOTER========
@@ -312,9 +295,7 @@ img{
 
 footer {
     border-top: solid hsl(0, 100%, 50%);
-    position: absolute;
-    bottom: 0;
-    width: 90%;
+    width: 100%;
     padding: 1em 0;
 }
 
@@ -340,38 +321,38 @@ footer {
         font-weight: 600;
         text-decoration: none;
     }
-
-    a, p, button, li{
-        font-size: 1em;
+    
+    h2 {
+        font-size: 1.2em;
         font-weight: 600;
         text-decoration: none;
     }
 
-    .logo{
-        height: max-content;
+    h3, a, p, button, li{
+        font-size: 0.8em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo svg{
-        margin-top: 0.3em;
-        height: 2.5em;
-        width: 2.5em;
-    }
-
-    .logo-title{
-        display: flex;
-        gap: 1.5em;
-    }
-
-    header {
         margin: 0;
-        padding: 0;
-        height: 5vh;
+        height: 3em;
+        width: 3em;
     }
 
-    .hamburguer{
-        display: flex;
-        align-items: center;
+    .hamburguer, .hamburguer svg{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
     }
+
     .hamburguer svg path{
         fill:hsl(0, 100%, 50%);
     }
@@ -380,18 +361,19 @@ footer {
         display: none;
     }
 
-    main {
+    .mobile-2-col{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        margin: 0 0 1em 0;
     }
 
-    .billing-container, .order-container{
+    .checkout-billing-container, .checkout-order-container{
         width: 100%;
         margin-top: 1em;
         padding: 1em 0;
-    }
-
-    footer{
-        display: none;
+        height: fit-content;
     }
 }

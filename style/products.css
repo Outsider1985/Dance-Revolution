@@ -182,8 +182,7 @@ button a{
 	font-weight: 600;
 	letter-spacing: 0;
 	line-height: 0px;
-    margin-top: 1em;
-	min-width: 20%;
+	width: fit-content;
 	padding: 1em 2em;
 	transition: 0.5s;
 	text-decoration: none;
@@ -206,6 +205,7 @@ button a{
     background-color: hsla(0, 0%, 0%, 0.5);
     height: 80vh;
     margin: 0;
+    margin-bottom: 1em;
     padding: 0;
     position: relative;
     width: 100%;
@@ -254,7 +254,7 @@ button a{
 
 .gallery-main{
     width: 100%;
-    height: 62vh;
+    height: 65vh;
     z-index: 1002;
     display: flex;
     justify-content: space-between;
@@ -267,7 +267,7 @@ button a{
     justify-content: space-between;
 }
 
-.course{
+.products-course{
     border-radius: 1em;
     text-align: center;
     display: flex;
@@ -278,8 +278,13 @@ button a{
     background-color: hsl(0, 0%, 100%);
 }
 
-.course-image{
+.products-course-image{
     width: 45%;
+}
+
+.products-course-button{
+    position: relative;
+    bottom: -1.2em;
 }
 
 .slider-form-button{
@@ -291,11 +296,9 @@ button a{
 ========FOOTER========
 ======================*/
 
-footer {
+.products-footer {
     border-top: solid hsl(0, 100%, 50%);
-    position: absolute;
-    bottom: 0;
-    width: 90%;
+    width: 100%;
     padding: 1em 0;
 }
 
@@ -321,60 +324,44 @@ footer {
         font-weight: 600;
         text-decoration: none;
     }
-
-    a, p, button, li{
-        font-size: 1em;
+    
+    h2 {
+        font-size: 1.2em;
         font-weight: 600;
         text-decoration: none;
     }
 
-    .logo{
-        height: max-content;
+    h3, a, p, button, li{
+        font-size: 0.8em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo svg{
-        margin-top: 0.3em;
-        height: 2.5em;
-        width: 2.5em;
-    }
-
-    .logo-title{
-        display: flex;
-        gap: 1.5em;
-    }
-
-    header {
         margin: 0;
-        padding: 0;
-        height: 5vh;
+        height: 3em;
+        width: 3em;
+    }
+
+    .hamburguer, .hamburguer svg{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .hamburguer svg path{
+        fill:hsl(0, 100%, 50%);
     }
 
     .menu{
-        position: relative;
         display: none;
-    }
-
-    main{
-        height: fit-content;
-        margin-top: 1em;
-    }
-
-    footer{
-        display: none;
-    }
-
-    .container{
-        margin: 0em;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .image{
-        position: relative;
-        width: 100%;
-        margin: 0;
-        padding: 0;
     }
 
     .logo-title{
@@ -390,57 +377,39 @@ footer {
         fill:hsl(0, 100%, 50%);
     }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 8vh;
-        padding: 0em;
-    }
-
-    .footer-element{
-        margin: 0;
-        margin-top:0.5em;
-    }
-
-    main{
-        height: auto;
-    }
-
-    .container{
+    .products-container{
         margin: 0;
         padding: 0;
+        height: fit-content;
         width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
     }
 
-    .aside{
+    .products-aside{
         height: 4vh;
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    .selection{
+    .products-selection{
         width: 50%;
     }
 
-    .categories{
+    .products-categories{
+        font-size: 1.5em;
         margin: 0;
         padding: 0;
         height: 4vh;
         width: 100%;
-        top:0;
-        font-size: 0.8em;
     }
 
     #categories-title{
         display: none;
     }
 
-    .categories ul{
+    .products-categories ul{
         width: 100%;
         margin:0;
         display: flex;
@@ -448,37 +417,44 @@ footer {
         justify-content: space-between;
     }
 
-    .gallery{
+    .products-gallery{
         margin: 0;
         padding: 0;
         width: 100%;
-        height: auto;
-        top:5vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
+        top: 3em;
     }
 
     .gallery-main{
-        height: auto;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .mobile-col-3{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .col-3{
-        width: 100%;
-        height: auto;
-    }
-
-    .item{   
+    .products-course{   
     width: 100%;
-    height: auto;
+    height: fit-content;
     margin-top: 1em; 
     padding: 1em 0;
-    border-color: #000000;
+    border-color: hsl(0, 0%, 0%);
     border: solid;
     }
 
-
-
+    .products-footer{
+        position: relative;
+        bottom: -170em;
+        border-top: solid hsl(0, 100%, 50%);
+        width: 100%;
+        padding: 1em 0;
+    }
 }
