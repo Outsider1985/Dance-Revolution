@@ -1,137 +1,106 @@
-    // ".products" es una clase que hace referencia a uno o varios elementos del html para darle estilo.
-    // las líneas dentro de las llaves es código de estilo que se aplicará a esa clase de elementos.
-    // de la siguiente manera --> propiedad:valor; 
-    .products{
-    //margin es una propiedad de estilo que se aplica a una capa/caja para apartarla del resto. primer valor
-    // arriba-abajo, segundo valor izq-der. 
-    margin: 4rem auto;
-    // width es la propiedad de ancho de capa. valor del 90% de la capa que la contiene en su anidamiento html
-    width: 90%;
+/*====================
+==PRODUCTS ELEMENTS===
+======================*/
 
-    .products-category{
-        // border es la propiedad que da un borde alrededor de la capa ensanchándola. valores de ancho de borde
-        // de estilo sólido continuo y color pre establecido por una variable de un archivo sass 
-        // llamándola con "$". En este caso, sólo aplicar por la derecha.
-        border-right: 2px solid $primary-color-light;
-        // height, altura deaseada para la capa a la que se hace referencia con la clase. En este caso 100%
-        // del tamaño de la que la contiene
-        height: 100%;
-        // Al tratarse de un archivo scss se permite anidamiento de las clases
-        .products-category-title{
-            // propiedad de margen sólo por abajo de la capa en cuestión de 1rem (medida estándar de 16px)
-            margin-bottom: 1rem;
-        }
-        // Sólo aplica estilo a elementos li de una lista desordenada de la capa products-category-list.
-        .products-category-list ul li{
-            // color: esta propiedad define color de los caracteres de esta clase. En formato hsl
-            // se representa gráficamente como un cono doble o un doble hexágono. Los dos vértices 
-            // en el modelo HSL se corresponden con el blanco y el negro, el ángulo se corresponde 
-            // con el matiz, la distancia al eje con la saturación y la distancia al eje blanco-negro 
-            // se corresponde a la luminancia.
-            color: hsl(0, 0%, 100%);
-            // font-size es la propiedad de tamaño de fuente tipográfica. Un 50% por encima de lo normal medido en rem
-            font-size: 1.5rem;
-            // margin-bottom: se pide un margen de 8px aprox por abajo, empujando otras capas de su nivel.
-            margin-bottom: 0.5rem;
-        }
-    }
-
-    .products-list-topbar{
-        // en este caso se define un margen primero por arriba, luego derecha, abajo y finalmente izq.
-        margin: 0.5rem 0 2rem 0;
-
-        .products-list-topbar-show-products span{
-            color: hsl(0, 0%, 100%);
-            font-size: 1.2rem;
-        }
-
-        .products-list-topbar-filter{
-            // auto es un valor equivalente a '0' y el resultado es que el elemento no se desplaza respecto 
-            // a la posición que le corresponde ocupar por su lugar en el flujo del documento
-            margin-left: auto;
-            // max-content es un valor que representa el ancho o alto máximo intrínseco del contenido.
-            width: max-content;
-
-            .products-list-topbar-filter-element select{
-                //font-weight permite establecer el grosor con el que se muestran las letras del texto
-                font-weight: 600;
-                // padding es el ensanchamiento de la capa respecto a su contenido. También de forma horaria:
-                // arriba-der-abajo-izq.
-                padding: 0.5rem 1rem;
-            }
-            // El selector principal, &, es un selector especial inventado por Sass que se usa en selectores anidados 
-            // para referirse al selector externo. 
-            // Hace posible reutilizar el selector externo de formas más complejas, como agregar una pseudoclase
-            // Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica 
-            // un estado especial del elemento seleccionado.
-            // La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que ha recibido el foco. 
-            // Generalmente se activa cuando el usuario hace clic
-            &:focus{
-                // propiedad outline: es una forma reducida para establecer una o más de las propiedades individuales de 
-                // contorno. En este caso "none" o ninguna.
-                outline: none;
-            }
-        }
-    }
-
-    .products-list-gallery-product{
-        border: 0.3rem solid hsl(0, 0%, 100%);
-        // define una curvatura del borde de la capa.
-        border-radius: 0.5em;
-        // define un sombreado de la capa en sentido horario
-        box-shadow: 5px 5px 14px 0px hsl(0, 0%, 20%);
-        // cursor: tipo de cursor. valor pointer: en forma de mano apuntando con el índice.
-        cursor: pointer;
-        margin-bottom: 2rem;
-        // overflow:hidden, todo lo que sobresalga de la capa queda oculto.
-        overflow: hidden;
-
-        .products-list-gallery-product-image{
-            // position es una propiedad que da ubicación a la capa respecto a las demás.
-            // el valor relative implica que la caja anidada se ubicará respecto al padre
-            position: relative;
-        }
-
-        .products-list-gallery-product-title{
-            padding: 1rem 0;
-
-            h2{
-                font-size: 1.2rem;
-                // text-align define la alineación del texto dentro de las capas. en este caso, centradas.
-                text-align: center;
-            }	
-        }	 
-
-        .products-list-gallery-product-price{
-            // pinta el fondo de la para del color definido en el valor.
-            background-color: hsla(0, 0%, 0%, 0.5);
-            padding: 0.5rem;
-            // position: absolute; hace independiente la capa de su padre pudiendo alojarla independientemente.
-            // en este caso, por la derecha y por arriba de la pantalla.
-            position: absolute;
-            right: 0;
-            top: 0;
-            // da estilo a todas las etiquetas span de esta capa.
-            span{
-                color: hsl(0, 0%, 100%);
-                font-size: 1.2rem;
-            }
-        }
-        
-        .products-list-gallery-product-add-to-cart button{
-            border-bottom: 0;
-            border-radius: 0;
-            font-size: 1rem;
-            padding: 1.5rem 0;
-            margin: 0;
-            width: 100%;
-        }
-    }
+.products-aside p, .page p{
+    color: hsl(0, 0%, 90%);
+    margin: 0.5em;
 }
 
+.products-header option{
+    text-align: center;
+}
 
+#categories-selected{
+    color: hsl(0, 100%, 25%);
+}
 
+button a{
+    color: hsl(0, 0%, 100%);
+}
 
+/*====================
+==PRODUCTS MAIN=======
+======================*/
 
+.products-container{
+    border-radius: 1em;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    height: 80vh;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
 
+.products-aside{
+    width: 20%;
+    height: 70vh;
+    z-index: 1001;
+    position: absolute;
+    top: 5%;
+    padding: 1em;
+}
 
+.products-categories{
+    border-radius: 1em;
+    background-color: hsla(0, 0%, 19%, 0.5);
+    width: 100%;
+    height: 40vh;
+    z-index: 1001;
+    padding: 0.5em;
+}
+
+.products-gallery{
+    width: 74%;
+    height: 70vh;
+    z-index: 1001;
+    position: absolute;
+    top:5%;
+    right: 0%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-header{
+    border-radius: 1em;
+    background-color: hsla(0, 0%, 19%, 0.5);
+    width: 100%;
+    height: 4vh;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-main{
+    width: 100%;
+    height: 65vh;
+    z-index: 1002;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-col-3{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products-course{
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.products-course-image{
+    width: 45%;
+}

@@ -1,44 +1,91 @@
-.product{
-    margin: 4rem auto;
+/*====================
+===PRODUCT ELEMENTS===
+======================*/
+
+button a{
+    color: hsl(0, 0%, 100%);
+}
+
+/*====================
+=====PRODUCT MAIN=====
+======================*/
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.product-course-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1em;
+}
+
+.product-course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 80%);
+    margin:0;
+}
+
+.product-course-image img{
+    border-radius: 1em;
+    margin: 0;
+}
+
+.product-course-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
     width: 90%;
+}
 
-    .product-image-gallery{
-        margin: 2rem 10%;
-        width: 80%;
+.product-course-gallery img{
+    width: 24%;
+    border-radius: 1em;
+}
 
-        .product-image-gallery-element{
-            cursor: pointer;
-        }
-    }
+.product-course-description{
+    margin: 2em;
+}
 
-    .product-info-title{
-        margin-bottom: 1rem;
-    }
+.product-order-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 2em;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    width: 29%;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1em;
+}
 
-    .product-info-price{
-        margin-bottom: 1rem;
-    }
+.product-order-reservation{
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .product-info-description{
-        margin-bottom: 1rem;
+.reservation-button{
+    display: flex;
+    align-items: center;
+}
 
-        p{
-            margin-bottom: 0.5rem;
-            text-align: justify;
-        }
-    }
-
-    .product-info-plus-minus{
-        display: flex;
-        margin: 3rem 0;
-
-        .product-info-plus-minus-title{
-            margin-right: 3rem;
-
-            span{
-                color: hsl(0, 0%, 100%);
-                font-weight: 600;
-            }
-        }
-    }
+#reservation-quantity{
+    width: 1.5em;
+    text-align: center;
 }

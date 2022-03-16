@@ -1,91 +1,113 @@
-.cart{
-    margin: 2rem auto;
-    width: 90%;
+/*====================
+======CART ELEMENTS===
+======================*/
 
-    .cart-title{
-        margin-bottom: 2rem;
-        width: 100%;
-
-        h2{
-            text-align: center;
-        }
-    }
-
-    .cart-table table{
-        border-collapse: collapse;
-        width: 100%;
-
-        th{
-            border-bottom: 0.2rem solid hsl(0, 0%, 100%);
-            color: hsl(0, 0%, 100%);
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        td{
-            color: hsl(0, 0%, 100%);
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 1rem;
-            text-align: center;
-
-            .plus-minus-button{
-                height: 40;
-                justify-content: center;
-            }
-        }
-    }
-
-    .cart-resume{
-        border: 0.1rem solid hsl(0, 0%, 100%);
-        margin-left: auto;
-        margin-top: 5rem;
-        width: 30%;
-
-        .cart-resume-title{
-            background-color: hsl(0, 0%, 100%);
-            margin-bottom: 1rem;
-            padding: 0.5rem 2rem;
-
-            h3{
-                color: $primary-color;
-                text-align: center;
-            }
-        }
-
-        .cart-resume-element{
-            padding: 0 1rem;
-            padding-bottom: 0.5rem;
-
-            h3{
-                text-align: center;
-            }
-
-            &#cart-resume-element-total{
-                border-top: 0.1rem solid hsl(0, 0%, 100%);
-                padding-top: 0.5rem;
-            }            
-        }
-    }    
-
-    .cart-buttons{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2rem;
-        margin-left: auto;
-        width: 30%;
-    }
+button a{
+    color: hsl(0, 0%, 100%);
 }
 
+/*====================
+=======Imágenes========
+======================*/
+
+img{
+    max-width: 100%;
+}
+
+/*====================
+======CART MAIN=======
+======================*/
 
 
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0 1% 0 1%;
+    width: 98%;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1em;
+}
 
+.cart-title{
+    height: fit-content;
+    margin: 1em;
+}
 
+.cart-course{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 1em;
+    background-color: hsl(0, 0%, 80%);
+    margin:0;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom:solid hsl(0, 57%, 34%);
+}
 
+.cart-course-image img{
+    margin: 0 1em;
+    height: 6em;
+    width: 6em;
+}
 
+.cart-course-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
 
+.cart-price-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+    margin:1em 0;
+    padding-bottom: 0.5em;
+    border-bottom: solid gray;
+}
 
+.cart-course-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 2em;
+    margin:0;
+}
 
+.product-order-reservation{
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.reservation-button{
+    display: flex;
+    align-items: center;
+}
+
+#reservation-quantity{
+    width: 1.5em;
+    text-align: center;
+}
+
+.cart-remove{
+    display: flex;
+    justify-content: end;
+    height: auto;
+    gap: 2em;
+    margin:0;
+    width: 100%;
+}

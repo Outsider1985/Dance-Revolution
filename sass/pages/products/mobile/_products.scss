@@ -1,98 +1,87 @@
-.products{
-    margin: 4rem auto;
-    width: 90%;
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
 
-    .products-category{
-        border-right: 2px solid $primary-color-light;
-        height: 100%;
+@media (max-width:479px) {
 
-        .products-category-title{
-            margin-bottom: 1rem;
-        }
-
-        .products-category-list ul li{
-            color: hsl(0, 0%, 100%);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
+    .products-container{
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .products-list-topbar{
-        margin: 0.5rem 0 2rem 0;
-
-        .products-list-topbar-show-products{
-            margin-bottom: 1rem;
-
-            span{
-                color: hsl(0, 0%, 100%);
-                font-size: 0.9rem;
-            }
-        }
-
-        .products-list-topbar-filter{
-            margin: 0;
-            width: 100%;
-
-            .products-list-topbar-filter-element{
-                margin-bottom: 0.5rem;
-
-                select{
-                    font-weight: 600;
-                    padding: 0.5rem 1rem;
-                    width: 100%;
-                }
-
-                &:focus{
-                    outline: none;
-                }
-            }
-        }
+    .products-aside{
+        height: 4vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .products-list-gallery-product{
-        border: 0.3rem solid hsl(0, 0%, 100%);
-        border-radius: 0.5em;
-        box-shadow: 5px 5px 14px 0px hsl(0, 0%, 20%);
-        cursor: pointer;
-        margin-bottom: 2rem;
-        overflow: hidden;
-        
-        .products-list-gallery-product-image{
-            position: relative;
-        }
-
-        .products-list-gallery-product-title{
-            padding: 1rem 0;
-
-            h2{
-                font-size: 1.2rem;
-                text-align: center;
-            }	
-        }	 
-
-        .products-list-gallery-product-price{
-            background-color: hsla(0, 0%, 0%, 0.5);
-            padding: 0.5rem;
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            span{
-                color: hsl(0, 0%, 100%);
-                font-size: 1.2rem;
-            }
-        }
-        
-        .products-list-gallery-product-add-to-cart button{
-            border-bottom: 0;
-            border-radius: 0;
-            font-size: 1rem;
-            padding: 1.5rem 0;
-            margin: 0;
-            width: 100%;
-        }
+    .products-selection{
+        width: 50%;
     }
-    
+
+    .products-categories{
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        height: 4vh;
+        width: 100%;
+    }
+
+    #categories-title{
+        display: none;
+    }
+
+    .products-categories ul{
+        width: 100%;
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .products-gallery{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        top: 3em;
+    }
+
+    .gallery-main{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+    }
+
+    .mobile-col-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products-course{   
+    width: 100%;
+    height: fit-content;
+    margin-top: 1em; 
+    padding: 1em 0;
+    border-color: hsl(0, 0%, 0%);
+    border: solid;
+    }
+
+    .products-footer{
+        position: relative;
+        bottom: -170em;
+        border-top: solid hsl(0, 100%, 50%);
+        width: 100%;
+        padding: 1em 0;
+    }
 }
-
-

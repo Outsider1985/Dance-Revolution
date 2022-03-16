@@ -1,102 +1,65 @@
-.contact{
-    margin: 0 auto;
-    width: 90%;
-
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
     
-    .contact-title{
-        margin: 5vh 0;
+@media (max-width:479px) {
 
-        h2{
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-align: center;
-        }
+    .contact-container{
+        margin: 0em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-image, .contact-form{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-form{
+        top: -0.3em;
+        left: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-info{
         width: 100%;
-
-        .contact-info-option{
-            margin-bottom: 2rem;
-
-            .contact-info-description{
-                margin-bottom: 2rem;
-
-                p{
-                    font-size: 1.5rem;
-                }   
-            }
-
-            .contact-info-option-icon{
-                display: inline;
-                margin-right: 1rem;
-
-                svg{
-                    height: 1.5rem;
-                    width: 1.5rem;
-
-                    path{
-                        fill:$secondary-color;
-                    }
-                }
-            }
-
-            .contact-info-option-text{
-                display: inline;
-
-                span{
-                    color: hsl(0, 0%, 100%);
-                    font-size: 1rem;
-                }
-            }
-        }
+        padding: 0;
+        margin: 0;
+        align-items: center;
     }
 
-    .contact-form-element{
-        margin-bottom: 1rem;
+    .contact-item{
+        margin-top: 0.5em;
+    }
 
-        .contact-form-element-label{
-            margin-bottom: 0.5rem;
-            width: 100%;
+    .form-container{
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
 
-            label{
-                color: hsl(0, 0%, 100%);
-            }
-        }
+    .form-label{
+        margin-top: 1em;
+        text-align: center;
+    }
 
-        .contact-form-element-input{
-            width: 100%;
+    .form-input{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
 
-            input{
-                padding: 0.2rem 2%;
-                width: 96%;
-            }
+    .form-element{
+        margin: 0;
+        text-align: center;
+    }
 
-            &:focus{
-                outline: 0;
-            }
-
-            textarea{
-                height: 20vh;
-                padding: 0.2rem 2%;
-                width: 98%;
-            }
-
-            &:focus{
-                outline: 0;
-            }
-        }
-
-        .contact-form-element-button{
-            margin: 0 auto;
-            width: max-content;
-        }
+    .form-column, .form-item, .form-comment{
+        width: 100%;
     }
 }
-
-
-
-
-
-
-

@@ -1,114 +1,105 @@
-.checkout{
-    margin: 2rem auto 4rem auto;
+/*====================
+===CHECKOUT MAIN======
+======================*/
+
+.desktop-2-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin: 0 0 1em 0;
+}
+
+.checkout-billing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    width: 49%;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1em;
+}
+
+.checkout-billing-title{
+    margin: 0;
+    margin-bottom: 1em;
     width: 90%;
+}
 
-    .checkout-title{
-        margin-bottom: 2rem;
-        width: 100%;
+.checkout-form-container{
+    width: 90%;
+}
 
-        h2{
-            text-align: center;
-        }
-    }
-    
-    .checkout-form{
-        border-right: 0.1rem solid hsl(0, 0%, 100%);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 1rem 15%;
-        width: 70%;
+.checkout-form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
-        .checkout-form-element{
-            margin-bottom: 1rem;
+.checkout-form-item, .checkout-form-item input{
+    width: 100%;
+}
 
-            .checkout-form-label{
-                margin-bottom: 0.5rem;
+.checkout-form-pay{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
 
-                label{
-                    color: hsl(0, 0%, 100%);
-                    font-weight: 600;
-                }
-            }
+.checkout-order-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    gap: 1em;
+    height: 80vh;
+    margin: 0;
+    padding: 0 1% 0 1%;
+    width: 47%;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1em;
+}
 
-            .checkout-form-input{
+.checkout-order{
+    width: 90%;
+    margin: 0;
+}
 
-                input{
-                    padding: 0.2rem 1rem;
-                    width: 100%;
+.checkout-order-table{
+    width: 100%;
+    text-align: left;
+}
 
-                    &:focus{
-                        outline: none;
-                    }
-                }
+.checkout-order-reservation{
+    gap: 0.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
-                select{
-                    font-weight: 600;
-                    padding: 0.2rem 1rem;
-                    width: 100%;
-                }
-            }
-        }
-    }
+.reservation-button{
+    display: flex;
+    align-items: center;
+}
 
-    .checkout-submit{
-        padding: 1rem 10%;
-        width: 80%;
+#reservation-quantity{
+    width: 1.5em;
+    text-align: center;
+}
 
-        .checkout-resume{
-            border: 0.1rem solid hsl(0, 0%, 100%);
-            margin-left: auto;
-            margin-top: 1rem;
-            width: 100%;
+.checkout-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0 1em;
+}
 
-            .checkout-resume-title{
-                background-color: hsl(0, 0%, 100%);
-                margin-bottom: 1rem;
-                padding: 0.5rem 2rem;
-
-                h3{
-                    color: $primary-color;
-                    text-align: center;
-                }
-            }
-
-            .checkout-resume-element{
-                padding: 0 1rem;
-                padding-bottom: 0.5rem;
-
-                h3{
-                    text-align: center;
-                }
-
-                #checkout-resume-element-total{
-                    border-top: 0.1rem solid hsl(0, 0%, 100%);
-                    padding-top: 0.5rem;
-                }                
-            }
-        }
-
-        .checkout-payment-form{
-            margin-top: 2rem;
-
-            .checkout-payment-form-element{
-                margin-bottom: 1rem;
-
-                .checkout-payment-form-radio,
-                .checkout-payment-form-radio-label{
-                    display: inline;
-                    margin-right: 0.5rem;
-
-                    label{
-                        color: hsl(0, 0%, 100%);
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            .checkout-payment-button{
-                margin-left: auto;
-                width: max-content;
-            }
-        }
-    }
+#total-quantity{
+    width: 3em;
 }

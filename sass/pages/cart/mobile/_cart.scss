@@ -1,84 +1,45 @@
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
 
-.cart{
-    margin: 2rem auto;
-    width: 90%;
+@media (max-width:479px) {
 
-    .cart-title{
-        margin-bottom: 2rem;
+    .cart-container{
         width: 100%;
-
-        h2{
-            text-align: center;
-        }
+        height: fit-content;
+        margin-bottom: 1em;
+        padding: 0;
     }
 
-    .cart-table table{
-        border-collapse: collapse;
+    .cart-course{
         width: 100%;
+        height: fit-content;
+        margin: 0;
 
-        th{
-            border-bottom: 0.2rem solid hsl(0, 0%, 100%);
-            color: hsl(0, 0%, 100%);
-            font-size: 1.2rem;
-            font-weight: 600;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        td{
-            color: hsl(0, 0%, 100%);
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding: 0.5rem 0.2rem;
-            text-align: center;
-
-            .plus-minus-button{
-                height: 40;
-                justify-content: center;
-                width: 100;
-            }
-        }
     }
 
-    .cart-resume{
-        border: 0.1rem solid hsl(0, 0%, 100%);
-        margin-left: auto;
-        margin-top: 2rem;
+    .cart-course-image img{
+        margin: 0;
+        height: 4em;
+        width: 4em;
+        display: none;
+    }
+
+    .cart-course-description{
         width: 100%;
-
-        .cart-resume-title{
-            background-color: hsl(0, 0%, 100%);
-            margin-bottom: 1rem;
-            padding: 0.5rem 2rem;
-
-            h3{
-                color: $primary-color;
-                text-align: center;
-            }
-        }
+        margin-bottom: 1em;
+        padding: 0;
     }
 
-    .cart-resume-element{
-        padding: 0 1rem;
-        padding-bottom: 0.5rem;
-
-        h3{
-            text-align: center;
-        }
-
-        &#cart-resume-element-total{
-            border-top: 0.1rem solid hsl(0, 0%, 100%);
-            padding-top: 0.5rem;
-        }
+    .cart-remove{
+        margin-top: 1em;
     }
-    
-    .cart-buttons{
+
+    .cart-price-container{
         display: flex;
-        justify-content: space-between;
-        margin: 2rem 0;
+        flex-direction: column;
         width: 100%;
-    }    
+        margin: 0;
+        padding: 0;
+    }
 }
-
-
-

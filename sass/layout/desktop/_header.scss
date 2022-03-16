@@ -1,44 +1,138 @@
-header{
+/*====================
+========HEADER========
+======================*/
+
+.header-container{
     display: flex;
-    justify-content: space-between;
-    margin: 0 5%;
-    width: 90%;
-    z-index: $z-index-header;
-
-    .header-logo{
-        display: flex;
-        width: max-content;
-
-        .header-logo-image svg{
-            height: 3rem;
-            width: 3rem;
-    
-            path{
-                fill:$secondary-color;
-            }
-        }
-
-        .header-logo-title{
-            margin-left: 1rem;
-
-            h1{
-                text-align: left;
-            }
-        }
-    }
-
-    .header-menu{
-        margin-left: auto;
-        width: max-content;
-
-        ul li{
-            color:hsl(0, 0%, 100%);
-            cursor: pointer;
-            display: inline;
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-        }
-    }
+    height: 10vh;
+    justify-content:space-between;
 }
 
+.header-2-col{
+    display: flex;
+    justify-content: flex-start;
+}
 
+/*====================
+========LOGO==========
+======================*/
+
+.title{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    margin: 0.5em 0 0 0;
+}
+
+.logo svg{
+    height: 5em;
+    width: 5em;
+}
+
+.logo svg path{
+    fill:hsl(0, 100%, 50%);
+}
+
+.hamburguer{
+    display:none;
+}
+
+/*====================
+========MENU==========
+======================*/
+
+.menu{
+    display: flex;
+    margin: 0;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul li{
+    background-color: hsl(0, 100%, 50%);
+    border-style: none;
+    border-radius: 1em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    margin: auto 0.5em;
+}
+
+.menu a{
+    color: hsl(0, 0%, 100%);
+}
+
+.menu ul li:hover{
+    background-color: hsl(0, 87%, 28%);
+    cursor: pointer;
+}
+
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
+
+@media (max-width:479px) {
+    
+    .menu{
+        display: flex;
+        margin: 0;
+    }
+
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .menu ul li{
+        background-color: hsl(0, 100%, 50%);
+        border-style: none;
+        border-radius: 1em;
+        font-weight: 600;
+        padding: 0.5em 1em;
+        margin: auto 0.5em;
+    }
+
+    .menu a{
+        color: hsl(0, 0%, 100%);
+    }
+
+    .menu ul li:hover{
+        background-color: hsl(0, 87%, 28%);
+        cursor: pointer;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo svg{
+        margin: 0;
+        height: 3em;
+        width: 3em;
+    }
+
+    .hamburguer, .hamburguer svg{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .hamburguer svg path{
+        fill:hsl(0, 100%, 50%);
+    }
+
+    .menu{
+        display: none;
+    }
+}

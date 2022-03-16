@@ -1,13 +1,6 @@
-h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 100%);
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, a, p, button, li{
+    color: hsl(0, 0%, 0%);
     font-family: $font-stack;
-}
-
-h5, h6 {
-    font-family: $font-stack-condensed;
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li{
@@ -21,12 +14,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-h4 {
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -43,5 +31,26 @@ a {
         outline: none;
         text-decoration: none;
         outline-offset: 0;
+    }
+}
+
+@media (max-width:479px) {
+    
+    h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    h3, a, p, button, li{
+        font-size: 0.8em;
+        font-weight: 600;
+        text-decoration: none;
     }
 }

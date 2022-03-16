@@ -251,13 +251,13 @@ img{
 ======MAIN STYLE======
 ======================*/
 
-h2 {
+.index-courses-title h2 {
     text-align: center;
     margin-bottom: 1em;
     width: 100%;
 }
 
-h3 {
+.course-title h3 {
     text-align: center;
     margin-bottom: 1em;
     width: 100%;

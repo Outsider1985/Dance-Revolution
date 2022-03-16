@@ -1,21 +1,28 @@
-.featured-button{
-    background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 50%, $primary-color 100%);
+/*====================
+=========BUTTON=======
+======================*/
+
+.slider-form-button{
+	background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
     background-size: 200% auto;
-    border-radius: 1rem;
-    border: 0.1rem solid hsl(0, 0%, 100%);
-    color: white;
+    border-radius: 1em;
+    border: none;
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 	font-weight: 600;
 	letter-spacing: 0;
 	line-height: 0px;
-    margin-top: 1rem;
-	min-width: 20%;
-	padding: 1.2rem 2rem;
+	width: fit-content;
+	padding: 1em 2em;
 	transition: 0.5s;
 	text-decoration: none;
+}
 
-    &:hover{
-        background-size: 100% auto;
-    }
+.slider-form-button:hover{
+    background-size: 100% auto;
+}
+
+.slider-form-button:focus {
+	outline: 0;
 }

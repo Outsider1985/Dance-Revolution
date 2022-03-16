@@ -1,0 +1,1396 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+form {
+  margin: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* List
+==============================================================================*/
+ol, ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+h1, h2, h3, a, p, button, li {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a, td, th, p, button, span, label, select, input, textarea, li {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 300ms;
+}
+a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+  outline-offset: 0;
+}
+
+@media (max-width: 479px) {
+  h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  h3, a, p, button, li {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+/*====================
+=======Structure======
+======================*/
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  padding-left: 5%;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+}
+
+/*====================
+========HEADER========
+======================*/
+.header-container {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.header-2-col {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*====================
+========LOGO==========
+======================*/
+.title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  margin: 0.5em 0 0 0;
+}
+
+.logo svg {
+  height: 5em;
+  width: 5em;
+}
+
+.logo svg path {
+  fill: red;
+}
+
+.hamburguer {
+  display: none;
+}
+
+/*====================
+========MENU==========
+======================*/
+.menu {
+  display: flex;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu ul li {
+  background-color: red;
+  border-style: none;
+  border-radius: 1em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  margin: auto 0.5em;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu ul li:hover {
+  background-color: #860909;
+  cursor: pointer;
+}
+
+/*====================
+==OTROS DISPOSITIVOS==
+======================*/
+@media (max-width: 479px) {
+  .menu {
+    display: flex;
+    margin: 0;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu ul li {
+    background-color: red;
+    border-style: none;
+    border-radius: 1em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    margin: auto 0.5em;
+  }
+
+  .menu a {
+    color: white;
+  }
+
+  .menu ul li:hover {
+    background-color: #860909;
+    cursor: pointer;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo svg {
+    margin: 0;
+    height: 3em;
+    width: 3em;
+  }
+
+  .hamburguer, .hamburguer svg {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .hamburguer svg path {
+    fill: red;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+/*====================
+========FOOTER========
+======================*/
+footer {
+  border-top: solid red;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.copyright {
+  margin-bottom: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.author {
+  margin: 0;
+  text-align: center;
+}
+
+.desktop-five-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-five-columns .column {
+  width: 18%;
+}
+
+.desktop-four-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-four-columns .column {
+  width: 22%;
+}
+
+.desktop-three-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-three-columns .column {
+  width: 30%;
+}
+
+.desktop-two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-two-columns .column {
+  width: 48%;
+}
+
+.desktop-two-columns-aside {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-two-columns-aside .column-aside {
+  width: 20%;
+}
+.desktop-two-columns-aside .column-main {
+  width: 75%;
+}
+
+.desktop-one-column {
+  width: 100%;
+}
+.desktop-one-column .column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*====================
+=========BUTTON=======
+======================*/
+.slider-form-button {
+  background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
+  background-size: 200% auto;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 0px;
+  width: fit-content;
+  padding: 1em 2em;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.slider-form-button:hover {
+  background-size: 100% auto;
+}
+
+.slider-form-button:focus {
+  outline: 0;
+}
+
+/*====================
+======CART ELEMENTS===
+======================*/
+button a {
+  color: white;
+}
+
+/*====================
+=======Imágenes========
+======================*/
+img {
+  max-width: 100%;
+}
+
+/*====================
+======CART MAIN=======
+======================*/
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 80vh;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0 1% 0 1%;
+  width: 98%;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
+
+.cart-title {
+  height: fit-content;
+  margin: 1em;
+}
+
+.cart-course {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  gap: 1em;
+  background-color: #cccccc;
+  margin: 0;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid #882525;
+}
+
+.cart-course-image img {
+  margin: 0 1em;
+  height: 6em;
+  width: 6em;
+}
+
+.cart-course-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.cart-price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+  margin: 1em 0;
+  padding-bottom: 0.5em;
+  border-bottom: solid gray;
+}
+
+.cart-course-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  gap: 2em;
+  margin: 0;
+}
+
+.product-order-reservation {
+  gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-button {
+  display: flex;
+  align-items: center;
+}
+
+#reservation-quantity {
+  width: 1.5em;
+  text-align: center;
+}
+
+.cart-remove {
+  display: flex;
+  justify-content: end;
+  height: auto;
+  gap: 2em;
+  margin: 0;
+  width: 100%;
+}
+
+/*====================
+===CHECKOUT MAIN======
+======================*/
+.desktop-2-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin: 0 0 1em 0;
+}
+
+.checkout-billing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
+
+.checkout-billing-title {
+  margin: 0;
+  margin-bottom: 1em;
+  width: 90%;
+}
+
+.checkout-form-container {
+  width: 90%;
+}
+
+.checkout-form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.checkout-form-item, .checkout-form-item input {
+  width: 100%;
+}
+
+.checkout-form-pay {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.checkout-order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1em;
+  height: 80vh;
+  margin: 0;
+  padding: 0 1% 0 1%;
+  width: 47%;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
+
+.checkout-order {
+  width: 90%;
+  margin: 0;
+}
+
+.checkout-order-table {
+  width: 100%;
+  text-align: left;
+}
+
+.checkout-order-reservation {
+  gap: 0.5em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.reservation-button {
+  display: flex;
+  align-items: center;
+}
+
+#reservation-quantity {
+  width: 1.5em;
+  text-align: center;
+}
+
+.checkout-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0 1em;
+}
+
+#total-quantity {
+  width: 3em;
+}
+
+/*====================
+====CONTACT STYLE=====
+======================*/
+.contact-info p {
+  color: #e6e6e6;
+}
+
+.contact-item svg path {
+  fill: maroon;
+}
+
+/*====================
+========FORM==========
+======================*/
+.contact-container {
+  height: 71vh;
+  margin: 1em 0;
+  position: relative;
+  width: 100%;
+}
+
+.contact-image, .contact-form {
+  position: absolute;
+}
+
+.contact-image {
+  z-index: 1000;
+}
+
+.contact-form {
+  top: 20%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-height: 100%;
+}
+
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.692);
+  padding: 1em;
+  z-index: 1001;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1em;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.692);
+  padding: 1em;
+  z-index: 1001;
+  width: 70%;
+}
+
+.form-element {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.form-label {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.form-label label {
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s;
+}
+
+.form-label--active label {
+  color: #ff5100;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-column {
+  width: 49%;
+}
+
+.form-item, .form-comment {
+  margin-top: 1em;
+}
+
+.form-comment {
+  width: 100%;
+  height: 4em;
+}
+
+.form-comment textarea {
+  height: 5em;
+}
+
+.form-input input,
+.form-input textarea,
+.form-input select {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+  width: 100%;
+}
+
+.form-input input:focus, .form-input textarea:focus {
+  outline: none;
+}
+
+.form-input select, .form-input select:focus, .slider-form-input select:active {
+  outline: 0 !important;
+}
+
+/*====================
+========SLIDER========
+======================*/
+.slider {
+  height: 75vh;
+  margin-top: 0.5em;
+  position: relative;
+  width: 100%;
+}
+
+.slider-image, .slider-form {
+  position: absolute;
+}
+
+.slider-image {
+  z-index: 1000;
+}
+
+.slider-form {
+  background-color: rgba(0, 0, 0, 0.692);
+  left: 10%;
+  padding: 2em;
+  top: 30%;
+  z-index: 1001;
+}
+
+.slider-form-element {
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.slider-form-label {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.slider-form-label label {
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  font-size: 1.5em;
+  transition: color 0.5s;
+}
+
+.slider-form-label--active label {
+  color: #ff5100;
+}
+
+.slider-form-input {
+  width: 100%;
+}
+
+.slider-form-input input,
+.slider-form-input textarea,
+.slider-form-input select {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: red;
+  font-family: "Ubuntu";
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+  width: 100%;
+}
+
+.slider-form-input input:focus, .slider-form-input textarea:focus {
+  outline: none;
+}
+
+.slider-form-input select, .slider-form-input select:focus, .slider-form-input select:active {
+  outline: 0 !important;
+}
+
+/*====================
+======MAIN STYLE======
+======================*/
+.index-courses-title h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.course-title h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.index-courses {
+  margin: 0;
+  width: 100%;
+}
+
+.desktop-col-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.index-course {
+  border-style: solid;
+  border-color: red;
+  border-radius: 1em;
+  padding: 0.1em;
+  margin-bottom: 1em;
+  width: 24%;
+}
+
+.course-image {
+  margin: 1em 0;
+  height: 35vh;
+  width: 100%;
+}
+
+.course-image img {
+  display: block;
+  margin: auto;
+}
+
+.course-title {
+  text-align: left;
+  margin: 1em;
+}
+
+.course-description {
+  text-align: left;
+  margin: 1em;
+}
+
+/*====================
+======MAIN NEWS=======
+======================*/
+.index-news {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em, 0;
+}
+
+.index-news-info {
+  width: 45%;
+}
+
+.index-news-info p {
+  text-align: left;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.index-news-image {
+  width: 45%;
+}
+
+.index-news-image img {
+  align-content: center;
+  margin: 5em 0;
+  width: 100%;
+}
+
+/*====================
+===PRODUCT ELEMENTS===
+======================*/
+button a {
+  color: white;
+}
+
+/*====================
+=====PRODUCT MAIN=====
+======================*/
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+.product-course-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
+
+.product-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cccccc;
+  margin: 0;
+}
+
+.product-course-image img {
+  border-radius: 1em;
+  margin: 0;
+}
+
+.product-course-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+  width: 90%;
+}
+
+.product-course-gallery img {
+  width: 24%;
+  border-radius: 1em;
+}
+
+.product-course-description {
+  margin: 2em;
+}
+
+.product-order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  width: 29%;
+  background-color: #cccccc;
+  border-radius: 1em;
+}
+
+.product-order-reservation {
+  gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-button {
+  display: flex;
+  align-items: center;
+}
+
+#reservation-quantity {
+  width: 1.5em;
+  text-align: center;
+}
+
+/*====================
+==PRODUCTS ELEMENTS===
+======================*/
+.products-aside p, .page p {
+  color: #e6e6e6;
+  margin: 0.5em;
+}
+
+.products-header option {
+  text-align: center;
+}
+
+#categories-selected {
+  color: maroon;
+}
+
+button a {
+  color: white;
+}
+
+/*====================
+==PRODUCTS MAIN=======
+======================*/
+.products-container {
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80vh;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.products-aside {
+  width: 20%;
+  height: 70vh;
+  z-index: 1001;
+  position: absolute;
+  top: 5%;
+  padding: 1em;
+}
+
+.products-categories {
+  border-radius: 1em;
+  background-color: rgba(48, 48, 48, 0.5);
+  width: 100%;
+  height: 40vh;
+  z-index: 1001;
+  padding: 0.5em;
+}
+
+.products-gallery {
+  width: 74%;
+  height: 70vh;
+  z-index: 1001;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-header {
+  border-radius: 1em;
+  background-color: rgba(48, 48, 48, 0.5);
+  width: 100%;
+  height: 4vh;
+  z-index: 1002;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 65vh;
+  z-index: 1002;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-col-3 {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products-course {
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  background-color: white;
+}
+
+.products-course-image {
+  width: 45%;
+}
+
+/*# sourceMappingURL=app.css.map */
