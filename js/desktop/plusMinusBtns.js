@@ -1,4 +1,5 @@
-export let plusMinusButton = () => {
+export let plusMinusBtns = () => {
+    
     let minusBtn = document.getElementById("minus");
     let plusBtn = document.getElementById("plus");
     let reservationNumber = document.getElementById("reservation-quantity");
