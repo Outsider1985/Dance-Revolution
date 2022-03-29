@@ -1,25 +1,29 @@
 export let tabBtns = () => {
 
-let tabTriggerBtns = document.querySelectorAll('.tabButton');
+let tabBtns = document.querySelectorAll('.tab');
+let tabContents = document.querySelectorAll('.product-course-description');
 
-tabTriggerBtns.forEach(tabTriggerBtn => {
-  tabTriggerBtn.addEventListener('click', function(){
-    let tabTrigger = this;
-    let tabTriggerData = tabTrigger.getAttribute('data-tab-trigger');
-    let tabContent = document.querySelector('.tab-content');
-    let currentTabData = document.querySelector('.tab-content[data-tab-content="' + tabTriggerData + '"]').classList.add('is-open');
+tabBtns.forEach(tabBtn => {
 
-    if(tabContent !== currentTabData) {
-      tabContent.classList.toggle('is-open');
-    }
+  tabBtn.addEventListener('click', function(){
 
-    if(tabTrigger.classList.contains('is-active')) {
-      tabTrigger.classList.remove('is-active');
-    }
-    else {
-      tabTriggerBtn.classList.remove('is-active');
-      tabTrigger.classList.add('is-active');
-    }   
+    let tabTriggerData = tabBtn.dataset.tabtrigger;
+
+    tabBtns.forEach( tabBtn => {
+
+      tabBtn.classList.remove('is_selected');
+    
+    });
+    
+    tabContents.forEach( tabContent => {
+    
+      tabContent.classList.remove('is_active');
+      
+    });
+    
+    document.querySelector('.tab[data-tabtrigger="' + tabTriggerData + '"]').classList.add('is_selected');
+    document.querySelector('.product-course-description[data-tabcontent="' + tabTriggerData + '"]').classList.add('is_active');
+
   });
 });
 

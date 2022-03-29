@@ -1277,6 +1277,7 @@ button a {
 .product-course-gallery img {
   width: 24%;
   border-radius: 1em;
+  transition: 1s;
 }
 
 .product-course-description {
@@ -1422,6 +1423,23 @@ button a {
 
 .products-course-image {
   width: 45%;
+}
+
+/*TABS*/
+
+.product-course-description{
+  position: absolute;
+  bottom: 100%;
+}
+
+.is_active{
+  position: relative;
+  bottom:0;
+}
+
+.is_selected{
+  border-radius: 45% !important;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=app.css.map */
