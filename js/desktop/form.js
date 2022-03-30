@@ -5,13 +5,13 @@ export let form = () => {
   let sendButton = document.getElementById("send-button");
   let form = document.getElementById("contact-form");
 
-  sendButton.addEventListener("click" , (e) => {
+  sendButton.addEventListener("click" , () => {
 
-    e.preventDefault();
 
-    let validate = new JustValidate("#contact-form");
+    let validation = new JustValidate("#contact-form");
 
-    validate.addField('#name', [
+    validation
+    .addField('#name', [
       {
         rule: 'minLength',
         value: 3,
@@ -20,23 +20,34 @@ export let form = () => {
         rule: 'maxLength',
         value: 30,
       },
+      {
+        rule: 'required',
+        errorMessage: 'El nombre es obligatorio.',
+      },
     ])
     .addField('#email', [
       {
         rule: 'required',
-        errorMessage: 'Email is required',
+        errorMessage: 'El email es obligatorio.',
       },
       {
-        rule: 'required',
-        errorMessage: 'El email es obligatorio',
-      }
+        rule: 'email',
+        errorMessage: 'El email es incorrecto!',
+      },
     ]);
 
     let data = new FormData(form);
+    console.log(validation.isValid);
 
-    // for (var pair of data.entries()) {
-    //   console.log(pair[0]+ ', ' + pair[1]); 
-    // }
+    if(validation.isValid==true){
+
+      for (var pair of data.entries()) {
+        console.log(pair[0]+ ', ' + pair[1]); 
+      }
+      
+    }else{console.log('Error de validación')}
+
+
   });
 
 }
