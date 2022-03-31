@@ -7,7 +7,7 @@ export let form = () => {
 
   sendButton.addEventListener("click" , () => {
 
-
+    let data = new FormData(form);
     let validation = new JustValidate("#contact-form");
 
     validation
@@ -34,19 +34,24 @@ export let form = () => {
         rule: 'email',
         errorMessage: 'El email es incorrecto!',
       },
-    ]);
+    ])
+    .onFail(() => {
 
-    let data = new FormData(form);
-    console.log(validation.isValid);
+      alert('FAILED FORM!');
+      console.log('FAILED FORM!'); 
 
-    if(validation.isValid==true){
+    })
+    .onSuccess((ev) => {
 
+      ev?.preventDefault();
+
+      alert('FORM SUBMITTED!');
+      console.log('FORM SUBMITTED!'); 
       for (var pair of data.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
-      
-    }else{console.log('Error de validación')}
 
+    });
 
   });
 
