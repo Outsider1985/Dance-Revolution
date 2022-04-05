@@ -1,8 +1,7 @@
-import { ClassicEditor } from "@ckeditor/ckeditor5-build-classic";
+import '../../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js';
 
 export let ckeditor = () => {
 
-    
         ClassicEditor
         .create( document.querySelector( '.ckeditor' ) )
         .then( editor => {
