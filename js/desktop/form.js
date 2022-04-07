@@ -18,13 +18,13 @@ export let form = () => {
       for (var pair of data.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
+      validation.destroy();
     });
 
     validation.onFail( () => {
       console.log('FAILED FORM!'); 
+      validation.destroy();
     });
-
-    //validation.destroy();
 
   });
 
