@@ -2,7 +2,17 @@ import JustValidate from '../../node_modules/just-validate/dist/just-validate.es
 
 export let validator = (form) => {
 
-    let validation = new JustValidate("#" + form.id);
+
+    let invalidElements = document.querySelectorAll('.is-invalid');
+
+    let validation = new JustValidate("#" + form.id, {
+        
+        errorFieldCssClass: 'is-invalid',
+        focusInvalidField: true,
+        lockForm: true,
+        errorsContainer: '#errors-container',
+
+    });
 
     validation.addField('#name', [
         {
@@ -30,4 +40,5 @@ export let validator = (form) => {
     ]);
 
     return validation;
+
 }

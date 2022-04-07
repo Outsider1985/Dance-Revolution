@@ -1442,4 +1442,12 @@ button a {
   transition: 1s;
 }
 
+/*ERRORS CONTACT FORM*/
+
+.just-validate-error-label{
+  font-size: 1.2rem; 
+  color: #dc3545 !important;
+}
+
+
 /*# sourceMappingURL=app.css.map */
