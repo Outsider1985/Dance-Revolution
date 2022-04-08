@@ -42,7 +42,7 @@ export let validator = (form) => {
             errorMessage: 'El email es incorrecto!',
         }
     ]);
-
+    
     return validation;
 
 

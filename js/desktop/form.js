@@ -9,8 +9,6 @@ export let form = () => {
 
     let data = new FormData(form);
     let validation = validator(form);
-
-    console.log(validation);
   
     validation.onSuccess(() => {
 
@@ -19,8 +17,6 @@ export let form = () => {
       for (var pair of data.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
-
-      
 
     });
 
