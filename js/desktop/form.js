@@ -4,8 +4,7 @@ export let form = () => {
 
   let sendButton = document.getElementById("send-button");
   let form = document.getElementById("contact-form");
-  //let errorFields = document.querySelectorAll(".just-validate-error-label");
-
+  
   sendButton.addEventListener("click" , () => {
 
     let data = new FormData(form);
@@ -14,17 +13,22 @@ export let form = () => {
     console.log(validation);
   
     validation.onSuccess(() => {
-      console.log('FORM SUBMITTED!'); 
+
+      console.log('FORM SUBMITTED!');
+
       for (var pair of data.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
+
+      
+
     });
 
     validation.onFail( () => {
-      console.log('FAILED FORM!'); 
-    });
 
-    //validation.destroy();
+      console.log('FAILED FORM!'); 
+    
+    });
 
   });
 

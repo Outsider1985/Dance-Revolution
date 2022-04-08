@@ -5,14 +5,18 @@ export let validator = (form) => {
 
     let invalidElements = document.querySelectorAll('.is-invalid');
 
-    let validation = new JustValidate("#" + form.id, {
+    let validation = new JustValidate(form, {
         
         errorFieldCssClass: 'is-invalid',
         focusInvalidField: true,
         lockForm: true,
         errorsContainer: '#errors-container',
-
     });
+
+
+    if( invalidElements.length >= 1 ){
+       validation.destroy()
+    };
 
     validation.addField('#name', [
         {
@@ -40,5 +44,6 @@ export let validator = (form) => {
     ]);
 
     return validation;
+
 
 }
