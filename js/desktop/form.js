@@ -1,10 +1,10 @@
 import {validator} from './validation.js';
+import {popup} from './popup.js';
 
 export let form = () => {
 
   let sendButton = document.getElementById("send-button");
   let form = document.getElementById("contact-form");
-  let popup = document.getElementById("popup-valid-form");
   
   sendButton.addEventListener("click" , () => {
 
@@ -19,14 +19,12 @@ export let form = () => {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
 
-      popup.classList.add('popup_is_active');
-      setTimeout( () => {popup.classList.remove('popup_is_active')}, 5000);
-
+      popup('success', 'Mensaje enviado correctamente');
     });
 
     validation.onFail( () => {
 
-      console.log('FAILED FORM!'); 
+      popup('error', 'Revise el formulario');
     
     });
 

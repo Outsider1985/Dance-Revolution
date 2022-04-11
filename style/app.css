@@ -1457,9 +1457,16 @@ button a {
   width: 20%;
   padding: 2em;
   opacity: 0;
-  background-color: #860909;
   text-align: center;
   color: hsl(34, 78%, 91%);
+}
+
+#popup-valid-form.success{
+  background-color: #014910;
+}
+
+#popup-valid-form.error{
+  background-color: #860909;
 }
 
 .popup_is_active{
