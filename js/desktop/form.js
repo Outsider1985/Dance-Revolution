@@ -4,6 +4,7 @@ export let form = () => {
 
   let sendButton = document.getElementById("send-button");
   let form = document.getElementById("contact-form");
+  let popup = document.getElementById("popup-valid-form");
   
   sendButton.addEventListener("click" , () => {
 
@@ -17,6 +18,9 @@ export let form = () => {
       for (var pair of data.entries()) {
         console.log(pair[0]+ ', ' + pair[1]); 
       }
+
+      popup.classList.add('popup_is_active');
+      setTimeout( () => {popup.classList.remove('popup_is_active')}, 5000);
 
     });
 

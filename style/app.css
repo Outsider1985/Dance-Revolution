@@ -1449,5 +1449,23 @@ button a {
   color: #dc3545 !important;
 }
 
+#popup-valid-form{
+  position: relative;
+  z-index: 5000;
+  top: 70%;
+  left: 70%;
+  width: 20%;
+  padding: 2em;
+  opacity: 0;
+  background-color: #860909;
+  text-align: center;
+  color: hsl(34, 78%, 91%);
+}
+
+.popup_is_active{
+  opacity: 0.8 !important;
+  transition: 2s !important;
+}
+
 
 /*# sourceMappingURL=app.css.map */
