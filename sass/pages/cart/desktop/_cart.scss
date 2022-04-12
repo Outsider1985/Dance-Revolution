@@ -1,25 +1,14 @@
 /*====================
 ======CART ELEMENTS===
 ======================*/
-
-button a{
-    color: hsl(0, 0%, 100%);
-}
-
-/*====================
-=======Imágenes========
-======================*/
-
-img{
-    max-width: 100%;
-}
-
-/*====================
-======CART MAIN=======
-======================*/
-
-
-.cart-container{
+button a {
+    color: white;
+  }
+  
+  /*====================
+  ======CART MAIN=======
+  ======================*/
+  .cart-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,43 +17,43 @@ img{
     margin-bottom: 1em;
     padding: 0 1% 0 1%;
     width: 98%;
-    background-color: hsl(0, 0%, 80%);
+    background-color: #cccccc;
     border-radius: 1em;
-}
-
-.cart-title{
+  }
+  
+  .cart-title {
     height: fit-content;
     margin: 1em;
-}
-
-.cart-course{
+  }
+  
+  .cart-course {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     height: fit-content;
     gap: 1em;
-    background-color: hsl(0, 0%, 80%);
-    margin:0;
+    background-color: #cccccc;
+    margin: 0;
     margin-bottom: 1em;
     padding-bottom: 1em;
-    border-bottom:solid hsl(0, 57%, 34%);
-}
-
-.cart-course-image img{
+    border-bottom: solid #882525;
+  }
+  
+  .cart-course-image img {
     margin: 0 1em;
     height: 6em;
     width: 6em;
-}
-
-.cart-course-description{
+  }
+  
+  .cart-course-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 85%;
-}
-
-.cart-price-container{
+  }
+  
+  .cart-price-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,42 +61,47 @@ img{
     align-items: center;
     width: 100%;
     gap: 2em;
-    margin:1em 0;
+    margin: 1em 0;
     padding-bottom: 0.5em;
     border-bottom: solid gray;
-}
-
-.cart-course-price{
+  }
+  
+  .cart-course-price {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
     gap: 2em;
-    margin:0;
-}
-
-.product-order-reservation{
+    margin: 0;
+  }
+  
+  .product-order-reservation {
     gap: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.reservation-button{
+  }
+  
+  #reservation-button {
     display: flex;
     align-items: center;
-}
-
-#reservation-quantity{
+  }
+  
+  #reservation-quantity {
     width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
-}
-
-.cart-remove{
+    border: solid hsl(0, 0%, 70%) 1px;
+    border-radius: 0.1em;
+    background-color: hsl(0, 0%, 95%);
+  }
+  
+  .cart-remove {
     display: flex;
     justify-content: end;
     height: auto;
     gap: 2em;
-    margin:0;
+    margin: 0;
     width: 100%;
-}
+  }

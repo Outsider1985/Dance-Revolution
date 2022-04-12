@@ -1,161 +1,158 @@
 /*====================
 ========SLIDER========
 ======================*/
-
-.slider{
+.slider {
     height: 75vh;
     margin-top: 0.5em;
     position: relative;
     width: 100%;
-}
-
-.slider-image, .slider-form{
+  }
+  
+  .slider-image, .slider-form {
     position: absolute;
-}
-
-.slider-image{
+  }
+  
+  .slider-image {
     z-index: 1000;
-}
-
-.slider-form{
-    background-color: hsla(0, 0%, 0%, 0.692);
+  }
+  
+  .slider-form {
+    background-color: rgba(0, 0, 0, 0.692);
     left: 10%;
     padding: 2em;
     top: 30%;
     z-index: 1001;
-}
-
-.slider-form-element{
+  }
+  
+  .slider-form-element {
     margin-bottom: 1.5em;
     width: 100%;
-}
-
-.slider-form-label{
+  }
+  
+  .slider-form-label {
     margin-bottom: 1em;
     width: 100%;
-}
-
-.slider-form-label label{
-    color: hsl(0, 100%, 50%);
-	font-family: "Ubuntu";
-	font-weight: 600;
-	font-size: 1.5em;
-	transition: color 0.5s;
-}
-
-.slider-form-label--active label{
-	color: hsl(19, 100%, 50%);
-}
-
-.slider-form-input{
+  }
+  
+  .slider-form-label label {
+    color: red;
+    font-family: "Ubuntu";
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: color 0.5s;
+  }
+  
+  .slider-form-label--active label {
+    color: #ff5100;
+  }
+  
+  .slider-form-input {
     width: 100%;
-}
-
-.slider-form-input input, 
-.slider-form-input textarea,
-.slider-form-input select {
-    background-color: hsl(0, 0%, 100%);
-	border: 1px solid hsl(0, 0%, 0%);
-	box-sizing: border-box;
-    color: hsl(0, 100%, 50%);
-	font-family: "Ubuntu";
-	font-weight: 600;
-	padding: 0.2em 0.5em;
-	width: 100%;
-}
-
-.slider-form-input input:focus, .slider-form-input textarea:focus{
-	outline: none;
-}
-
-.slider-form-input select, .slider-form-input select:focus, .slider-form-input select:active { 
-	outline: 0 !important; 
-}
+  }
+  
+  .slider-form-input input,
+  .slider-form-input textarea,
+  .slider-form-input select {
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: red;
+    font-family: "Ubuntu";
+    font-weight: 600;
+    padding: 0.2em 0.5em;
+    width: 100%;
+  }
+  
+  .slider-form-input input:focus, .slider-form-input textarea:focus {
+    outline: none;
+  }
+  
+  .slider-form-input select, .slider-form-input select:focus, .slider-form-input select:active {
+    outline: 0 !important;
+  }
 
 /*====================
 ======MAIN STYLE======
 ======================*/
-
 .index-courses-title h2 {
     text-align: center;
     margin-bottom: 1em;
     width: 100%;
-}
-
-.course-title h3 {
+  }
+  
+  .course-title h3 {
     text-align: center;
     margin-bottom: 1em;
     width: 100%;
-}
-
-.index-courses{
-    margin:0;
+  }
+  
+  .index-courses {
+    margin: 0;
     width: 100%;
-}
-
-.desktop-col-4{
+  }
+  
+  .desktop-col-4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-}
-
-.index-course{
+  }
+  
+  .index-course {
     border-style: solid;
-    border-color: hsl(0, 100%, 50%);
+    border-color: red;
     border-radius: 1em;
     padding: 0.1em;
     margin-bottom: 1em;
     width: 24%;
-}
-
-.course-image {
+  }
+  
+  .course-image {
     margin: 1em 0;
     height: 35vh;
     width: 100%;
-}
-
-.course-image img{
+  }
+  
+  .course-image img {
     display: block;
     margin: auto;
-}
-
-.course-title {
+  }
+  
+  .course-title {
     text-align: left;
     margin: 1em;
-}
-
-.course-description {
+  }
+  
+  .course-description {
     text-align: left;
     margin: 1em;
-}
-
-/*====================
-======MAIN NEWS=======
-======================*/
-
-.index-news {
+  }
+  
+  /*====================
+  ======MAIN NEWS=======
+  ======================*/
+  .index-news {
     display: flex;
     justify-content: space-between;
     margin: 1em, 0;
-}
-
-.index-news-info {
+  }
+  
+  .index-news-info {
     width: 45%;
-}
-
-.index-news-info p {
+  }
+  
+  .index-news-info p {
     text-align: left;
     margin: 2em 0;
     width: 100%;
-}
-
-.index-news-image {
+  }
+  
+  .index-news-image {
     width: 45%;
-}
-
-.index-news-image img {
+  }
+  
+  .index-news-image img {
     align-content: center;
     margin: 5em 0;
     width: 100%;
-}
+  }

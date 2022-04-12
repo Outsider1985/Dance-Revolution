@@ -459,7 +459,7 @@ a:hover, a:focus {
 }
 
 /*====================
-==OTROS DISPOSITIVOS==
+==CART MOBILE=========
 ======================*/
 @media (max-width: 479px) {
   .cart-container {
@@ -501,7 +501,7 @@ a:hover, a:focus {
   }
 }
 /*====================
-==OTROS DISPOSITIVOS==
+==CHECKOUT MOBILE=====
 ======================*/
 @media (max-width: 479px) {
   .mobile-2-col {
@@ -521,8 +521,9 @@ a:hover, a:focus {
   }
 }
 /*====================
-==OTROS DISPOSITIVOS==
+==CONTACT MOBILE======
 ======================*/
+
 @media (max-width: 479px) {
   .contact-container {
     margin: 0em;
@@ -584,8 +585,9 @@ a:hover, a:focus {
   }
 }
 /*====================
-==OTROS DISPOSITIVOS==
+=====INDEX MOBILE=====
 ======================*/
+
 @media (max-width: 479px) {
   .slider {
     height: 30vh;
@@ -655,8 +657,9 @@ a:hover, a:focus {
   }
 }
 /*====================
-==OTROS DISPOSITIVOS==
+==PRODUCT MOBILE======
 ======================*/
+
 @media (max-width: 479px) {
   .product-container {
     display: flex;
@@ -674,9 +677,11 @@ a:hover, a:focus {
     margin: 1em;
   }
 }
+
 /*====================
-==OTROS DISPOSITIVOS==
+==PRODUCTS MOBILE=====
 ======================*/
+
 @media (max-width: 479px) {
   .products-container {
     margin: 0;

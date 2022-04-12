@@ -1,73 +1,72 @@
 /*====================
-==OTROS DISPOSITIVOS==
+=====INDEX MOBILE=====
 ======================*/
 
-@media (max-width:479px) {
-
-    .slider{
-        height: 30vh;
-        margin: 0;
-        position: relative;
-        width: 100%;
+@media (max-width: 479px) {
+    .slider {
+      height: 30vh;
+      margin: 0;
+      position: relative;
+      width: 100%;
     }
-    
-    .slider-image, .slider-form{
-        position: absolute;
+  
+    .slider-image, .slider-form {
+      position: absolute;
     }
-    
-    .slider-image{
-        z-index: 1000;
+  
+    .slider-image {
+      z-index: 1000;
     }
-    
-    .slider-form{
-        font-size: 0.8em;
-        background-color: hsla(0, 0%, 0%, 0.692);
-        left: 10%;
-        padding: 1em;
-        top: 10%;
-        z-index: 1001;
+  
+    .slider-form {
+      font-size: 0.8em;
+      background-color: rgba(0, 0, 0, 0.692);
+      left: 10%;
+      padding: 1em;
+      top: 10%;
+      z-index: 1001;
     }
-
-    .index-courses{
-        width: 100%;
+  
+    .index-courses {
+      width: 100%;
     }
-
-    .mobile-col-4{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        }
-
+  
+    .mobile-col-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
     .index-course {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .index-news {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
-    
+  
     .index-news-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
     }
-    
+  
     .index-news-info p {
-        text-align: left;
-        margin: 0.5em 0;
-        width: 100%;
+      text-align: left;
+      margin: 0.5em 0;
+      width: 100%;
     }
-    
+  
     .index-news-image {
-        width: 100%;
+      width: 100%;
     }
-    
+  
     .index-news-image img {
-        align-content: center;
-        margin: 1em 0;
-        width: 100%;
+      align-content: center;
+      margin: 1em 0;
+      width: 100%;
     }
-}
+  }

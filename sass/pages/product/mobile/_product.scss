@@ -1,22 +1,21 @@
 /*====================
-==OTROS DISPOSITIVOS==
+==PRODUCT MOBILE======
 ======================*/
 
-@media (max-width:479px) {
-
-    .product-container{
-        display: flex;
-        flex-direction: column;
+@media (max-width: 479px) {
+    .product-container {
+      display: flex;
+      flex-direction: column;
     }
-
-    .product-course-container, .product-order-container{
-        width: 100%;
-        height: fit-content;
-        margin-bottom: 1em;
-        padding: 1em 0;
+  
+    .product-course-container, .product-order-container {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 1em;
+      padding: 1em 0;
     }
-
-    .product-course-description{
-        margin: 1em;
+  
+    .product-course-description {
+      margin: 1em;
     }
-}
+  }

@@ -627,6 +627,8 @@ footer {
   text-align: center;
 }
 
+/*COLUMNS*/
+
 .desktop-five-columns {
   display: flex;
   justify-content: space-between;
@@ -687,12 +689,13 @@ footer {
 /*====================
 =========BUTTON=======
 ======================*/
+
 .slider-form-button {
-  background-image: linear-gradient(to right, #862525 0%, #b00202 50%, #862525 100%);
+  background-image: linear-gradient(to right, hsl(0, 57%, 34%) 0%, hsl(0, 98%, 35%) 50%, hsl(0, 57%, 34%) 100%);
   background-size: 200% auto;
   border-radius: 1em;
   border: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
   cursor: pointer;
   font-size: 1.2em;
   font-weight: 600;
@@ -949,7 +952,7 @@ img {
 }
 
 /*====================
-========FORM==========
+=====CONTACT FORM=====
 ======================*/
 .contact-container {
   height: 71vh;

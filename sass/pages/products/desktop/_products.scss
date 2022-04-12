@@ -1,96 +1,94 @@
 /*====================
 ==PRODUCTS ELEMENTS===
 ======================*/
-
-.products-aside p, .page p{
-    color: hsl(0, 0%, 90%);
+.products-aside p, .page p {
+    color: #e6e6e6;
     margin: 0.5em;
-}
-
-.products-header option{
+  }
+  
+  .products-header option {
     text-align: center;
-}
-
-#categories-selected{
-    color: hsl(0, 100%, 25%);
-}
-
-button a{
-    color: hsl(0, 0%, 100%);
-}
-
-/*====================
-==PRODUCTS MAIN=======
-======================*/
-
-.products-container{
+  }
+  
+  #categories-selected {
+    color: maroon;
+  }
+  
+  button a {
+    color: white;
+  }
+  
+  /*====================
+  ==PRODUCTS MAIN=======
+  ======================*/
+  .products-container {
     border-radius: 1em;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 80vh;
     margin: 0;
     margin-bottom: 1em;
     padding: 0;
     position: relative;
     width: 100%;
-}
-
-.products-aside{
+  }
+  
+  .products-aside {
     width: 20%;
     height: 70vh;
     z-index: 1001;
     position: absolute;
     top: 5%;
     padding: 1em;
-}
-
-.products-categories{
+  }
+  
+  .products-categories {
     border-radius: 1em;
-    background-color: hsla(0, 0%, 19%, 0.5);
+    background-color: rgba(48, 48, 48, 0.5);
     width: 100%;
     height: 40vh;
     z-index: 1001;
     padding: 0.5em;
-}
-
-.products-gallery{
+  }
+  
+  .products-gallery {
     width: 74%;
     height: 70vh;
     z-index: 1001;
     position: absolute;
-    top:5%;
+    top: 5%;
     right: 0%;
     padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.gallery-header{
+  }
+  
+  .gallery-header {
     border-radius: 1em;
-    background-color: hsla(0, 0%, 19%, 0.5);
+    background-color: rgba(48, 48, 48, 0.5);
     width: 100%;
     height: 4vh;
     z-index: 1002;
     display: flex;
     justify-content: space-between;
-}
-
-.gallery-main{
+  }
+  
+  .gallery-main {
     width: 100%;
     height: 65vh;
     z-index: 1002;
     display: flex;
     justify-content: space-between;
-}
-
-.desktop-col-3{
+  }
+  
+  .desktop-col-3 {
     width: 31%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.products-course{
+  }
+  
+  .products-course {
     border-radius: 1em;
     text-align: center;
     display: flex;
@@ -98,9 +96,9 @@ button a{
     align-items: center;
     width: 100%;
     height: 30%;
-    background-color: hsl(0, 0%, 100%);
-}
-
-.products-course-image{
+    background-color: white;
+  }
+  
+  .products-course-image {
     width: 45%;
-}
+  }

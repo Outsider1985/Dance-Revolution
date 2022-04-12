@@ -1,22 +1,21 @@
 /*====================
-==OTROS DISPOSITIVOS==
+==CHECKOUT MOBILE=====
 ======================*/
 
-@media (max-width:479px) {
-
-    .mobile-2-col{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: fit-content;
-        margin: 0 0 1em 0;
+@media (max-width: 479px) {
+    .mobile-2-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: fit-content;
+      margin: 0 0 1em 0;
     }
-
-    .checkout-billing-container, .checkout-order-container{
-        width: 100%;
-        margin-top: 1em;
-        padding: 1em 0;
-        height: fit-content;
+  
+    .checkout-billing-container, .checkout-order-container {
+      width: 100%;
+      margin-top: 1em;
+      padding: 1em 0;
+      height: fit-content;
     }
-}
+  }

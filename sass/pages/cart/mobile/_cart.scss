@@ -1,45 +1,43 @@
 /*====================
-==OTROS DISPOSITIVOS==
+==CART MOBILE=========
 ======================*/
 
-@media (max-width:479px) {
-
-    .cart-container{
-        width: 100%;
-        height: fit-content;
-        margin-bottom: 1em;
-        padding: 0;
+@media (max-width: 479px) {
+    .cart-container {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 1em;
+      padding: 0;
     }
-
-    .cart-course{
-        width: 100%;
-        height: fit-content;
-        margin: 0;
-
+  
+    .cart-course {
+      width: 100%;
+      height: fit-content;
+      margin: 0;
     }
-
-    .cart-course-image img{
-        margin: 0;
-        height: 4em;
-        width: 4em;
-        display: none;
+  
+    .cart-course-image img {
+      margin: 0;
+      height: 4em;
+      width: 4em;
+      display: none;
     }
-
-    .cart-course-description{
-        width: 100%;
-        margin-bottom: 1em;
-        padding: 0;
+  
+    .cart-course-description {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0;
     }
-
-    .cart-remove{
-        margin-top: 1em;
+  
+    .cart-remove {
+      margin-top: 1em;
     }
-
-    .cart-price-container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+  
+    .cart-price-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
-}
+  }

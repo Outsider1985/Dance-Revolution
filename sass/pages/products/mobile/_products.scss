@@ -1,87 +1,86 @@
 /*====================
-==OTROS DISPOSITIVOS==
+==PRODUCTS MOBILE=====
 ======================*/
 
-@media (max-width:479px) {
-
-    .products-container{
-        margin: 0;
-        padding: 0;
-        height: fit-content;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+@media (max-width: 479px) {
+    .products-container {
+      margin: 0;
+      padding: 0;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
-
-    .products-aside{
-        height: 4vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+  
+    .products-aside {
+      height: 4vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
-
-    .products-selection{
-        width: 50%;
+  
+    .products-selection {
+      width: 50%;
     }
-
-    .products-categories{
-        font-size: 1.5em;
-        margin: 0;
-        padding: 0;
-        height: 4vh;
-        width: 100%;
+  
+    .products-categories {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      height: 4vh;
+      width: 100%;
     }
-
-    #categories-title{
-        display: none;
+  
+    #categories-title {
+      display: none;
     }
-
-    .products-categories ul{
-        width: 100%;
-        margin:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+  
+    .products-categories ul {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    .products-gallery{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        top: 3em;
+  
+    .products-gallery {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      top: 3em;
     }
-
-    .gallery-main{
-        height: fit-content;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5em;
+  
+    .gallery-main {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5em;
     }
-
-    .mobile-col-3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+  
+    .mobile-col-3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
-
-    .products-course{   
-    width: 100%;
-    height: fit-content;
-    margin-top: 1em; 
-    padding: 1em 0;
-    border-color: hsl(0, 0%, 0%);
-    border: solid;
+  
+    .products-course {
+      width: 100%;
+      height: fit-content;
+      margin-top: 1em;
+      padding: 1em 0;
+      border-color: black;
+      border: solid;
     }
-
-    .products-footer{
-        position: relative;
-        bottom: -170em;
-        border-top: solid hsl(0, 100%, 50%);
-        width: 100%;
-        padding: 1em 0;
+  
+    .products-footer {
+      position: relative;
+      bottom: -170em;
+      border-top: solid red;
+      width: 100%;
+      padding: 1em 0;
     }
-}
+  }
