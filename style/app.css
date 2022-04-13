@@ -1453,7 +1453,7 @@ button a {
 }
 
 #popup-valid-form{
-  position: relative;
+  position: absolute;
   z-index: 5000;
   top: 70%;
   left: 70%;
